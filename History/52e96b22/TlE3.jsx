@@ -1,0 +1,77 @@
+import React from "react";
+import styled from "styled-components";
+
+import Icon from "../Icon";
+
+const Select = ({ label, value, children, ...delegated }) => {
+  const childArray = React.Children.toArray(children);
+  const selectedChild = childArray.find((child) => child.props.value === value);
+
+  const displayedValue = selectedChild.props.children;
+
+  return (
+    <Wrapper>
+      <VisibleLabel>{label}</VisibleLabel>
+
+      <SelectWrapper>
+        <NativeSelect {...delegated}>{children}</NativeSelect>
+
+        <DisplayedBit>
+          {displayedValue}
+          <ChevronIconIcon
+        </DisplayedBit>
+      </SelectWrapper>
+    </Wrapper>
+  );
+};
+
+const Wrapper = styled.label``;
+
+const VisibleLabel = styled.span`
+  color: hsl(220deg 5% 40%);
+  margin-right: 16px;
+`;
+
+const SelectWrapper = styled.div`
+  position: relative;
+`;
+
+const NativeSelect = styled.select`
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+`;
+
+const DisplayedBit = styled.span`
+  display: block;
+  background: hsl(185deg, 5%, 95%);
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(220deg, 3%, 20%);
+  padding: 12px 42px 12px 16px;
+  border-radius: 8px;
+  pointer-events: none;
+
+  ${NativeSelect}:focus ~ & {
+    outline: 1px dotted #212121;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+`;
+
+const ChevronIcon = styled.div`
+  position: absolute;
+  top: 0;
+  right: 9px;
+  bottom: 0;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+`;
+
+export default Select;

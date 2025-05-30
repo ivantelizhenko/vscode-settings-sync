@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #f8fff4;
+  width: 100%;
+  height: var(--header-height);
+  font-weight: 600;
+}
+
+.logoContainer {
+  width: var(--left-side-width);
+  padding: 0 2.8rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.searchContainer {
+  margin-left: auto;
+  padding: 0 2rem 0 2.8rem;
+}

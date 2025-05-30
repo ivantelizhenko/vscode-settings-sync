@@ -1,0 +1,18 @@
+.header {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start/ col-end 6;
+
+  &__logo {
+  }
+
+  &__seenon-text {
+  }
+
+  &__seenon-logos {
+    display: flex;
+    gap: 2.5rem;
+    img {
+      height: 2.5rem;
+    }
+  }
+}

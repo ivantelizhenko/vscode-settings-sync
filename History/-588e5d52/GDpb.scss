@@ -1,0 +1,18 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin grid(numberItems) {
+  & {
+    width: calc((100% - #{$gutter-horizontal}) / ${numberItem});
+    background-color: orange;
+    float: left;
+  }
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+  }
+}

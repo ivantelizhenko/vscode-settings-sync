@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* DOES NOT WORK ON THE SAFARI  */
+  /* scroll-behavior: smooth; */
+}
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  background-image: linear-gradient(to right, #fc00ff, #00dbde);
+  height: 100vh;
+}
+
+/*****************************************/
+/*NAVIGATION*/
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 8rem;
+  background-color: #333;
+}
+
+.nav__items {
+  display: flex;
+  height: inherit;
+  gap: 2.4rem;
+  margin: 0 2.4rem;
+}
+
+.nav__item,
+.nav__button,
+.nav__img {
+  display: flex;
+  color: #eee;
+  font-size: 2.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__item:hover,
+.nav__item:active {
+  color: greenyellow;
+  cursor: pointer;
+}
+
+.nav__img {
+  color: #444;
+  width: 20rem;
+  height: inherit;
+  background-color: #eee;
+}
+
+.nav__button {
+  color: #444;
+  border: none;
+  border-radius: 13px;
+  width: 20rem;
+  height: 75%;
+  margin: 0 2.4rem;
+  cursor: pointer;
+}
+/*****************************************/
+/*LOGIN WINDOW*/
+.section {
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__window {
+  width: 70rem;
+  background-color: #ffffff;
+}
+
+.login__btn--section {
+  height: 8rem;
+  display: flex;
+}
+
+.login__btn {
+  font-size: 4.8rem;
+  font-weight: 600;
+  width: 50%;
+  height: 100%;
+
+  color: #3d3938;
+  background-color: #d0c5c0;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.login__btn--active {
+  background-color: inherit;
+  color: #3c8527;
+}
+
+.login__main,
+.login__aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 0 6.4rem;
+}
+
+.login__main {
+  grid-template-rows: repeat(3, auto);
+  border-bottom: solid 2px #3d39381c;
+}
+
+.login--aside {
+  grid-template-rows: repeat(2, auto);
+}
+
+.login--header,
+.login__main--message {
+  margin: 2.4rem 0;
+}
+.login--header {
+  font-size: 4rem;
+  height: max-content;
+}
+
+.login__main--btn {
+  font-size: 3rem;
+  font-weight: 600;
+  width: 60rem;
+  height: 8rem;
+  color: #fff;
+  background-color: #3c8527;
+
+  box-shadow: inset 0 -1rem gold, inset 0 1rem #52a535;
+  cursor: pointer;
+}
+
+.login__main--message,
+.login__aside--list--item {
+  text-align: center;
+  word-break: break-all;
+  font-size: 2rem;
+}
+
+.login__aside--list {
+  justify-self: start;
+}
+
+.login__aside--list:last-child {
+  margin-bottom: 1.8rem;
+}
+
+.login__aside--list--item {
+  margin-bottom: 0.8rem;
+}

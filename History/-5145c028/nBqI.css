@@ -1,0 +1,55 @@
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary--lighter: hsl(45deg, 100%, 50%);
+  --color-secondary--darker: hsl(45deg, 100%, 40%);
+
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-very-dark: hsl(0deg, 0%, 10%);
+  --color-dark: hsl(0deg, 0%, 30%);
+  --color-medium: hsl(0deg, 0%, 40%);
+  --color-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--color-white);
+}
+
+.max-width-wrapper {
+  height: 50%;
+  margin: 0 auto;
+  width: fit-content;
+}
+.max-width-wrapper.header {
+  border-bottom: 8px solid var(--color-light);
+}
+.max-width-wrapper.main {
+  background-color: var(--color-medium);
+}
+
+.card {
+  background-color: var(--color-white);
+  border-bottom: 8px solid var(--color-light);
+}
+
+.indented-heading {
+  background-color: var(--color-secondary--lighter);
+  border-bottom: 8px solid var(--color-secondary--darker);
+}

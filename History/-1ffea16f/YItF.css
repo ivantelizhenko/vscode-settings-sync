@@ -1,0 +1,71 @@
+@layer component {
+  /*  Buttons  */
+  .button {
+    font-size: 1.25rem;
+    border: none;
+  }
+
+  .button--icon {
+    background-color: transparent;
+  }
+
+  .button--fill {
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    transition: background-color, 5s;
+
+    &:hover {
+      transition: background-color, 0.2s;
+      background-color: var(--color-accent-lighter);
+    }
+  }
+
+  /* Dialog */
+  .dialog {
+    z-index: 101;
+    border: none;
+    background-color: var(--color-white);
+    position: absolute;
+  }
+
+  /* Heading */
+
+  .heading-4 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .sub-heading {
+    font-size: 20px;
+    color: var(--color-gray);
+  }
+
+  /* Margins */
+
+  .mb-16 {
+    margin-bottom: 16px;
+  }
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+
+  /* Toast */
+  .toast {
+    border-radius: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 1rem;
+    display: none;
+
+    animation: liftUp 1s both;
+  }
+}

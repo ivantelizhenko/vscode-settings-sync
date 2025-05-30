@@ -1,0 +1,18 @@
+.container {
+  padding: 1.2rem 2rem 1.2rem 2.8rem;
+  border-bottom: 1px solid #3b8f443d;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.containerActive {
+  background-color: #dcffd3;
+  border: none;
+}
+
+.title {
+}
+.date {
+}
+.description {
+}

@@ -1,0 +1,3 @@
+export const TITLE_PRIVIEW_LENGTH = 20;
+export const DESCRIPTION_PRIVIEW_LENGTH = 20;
+export const ONE_DAY_MILLISECONDS = 86_400_000;

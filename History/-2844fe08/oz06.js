@@ -1,0 +1,53 @@
+import { useEffect, useState } from "react";
+import clickSound from "./ClickSound.m4a";
+
+import Calculator from "./Calculator";
+import ToggleSounds from "./ToggleSounds";
+
+function App() {
+  const [allowSound, setAllowSound] = useState(true);
+  const [time, setTime] = useState(formatTime(new Date()));
+
+  // Will be be AM or PM
+  const partOfDay = time.slice(-2);
+
+  const workouts = [
+    {
+      name: "Full-body workout",
+      numExercises: partOfDay === "AM" ? 9 : 8,
+    },
+    {
+      name: "Arms + Legs",
+      numExercises: 6,
+    },
+    {
+      name: "Arms only",
+      numExercises: 3,
+    },
+    {
+      name: "Legs only",
+      numExercises: 4,
+    },
+    {
+      name: "Core only",
+      numExercises: partOfDay === "AM" ? 5 : 4,
+    },
+  ];
+
+  const handlePlaySound = function () {
+    if (!allowSound) return;
+    const sound = new Audio(clickSound);
+    sound.play();
+  };
+
+  return (
+    <main>
+      <h1>Workout timer</h1>
+      <time>For your workout on {time}</time>
+      <ToggleSounds allowSound={allowSound} setAllowSound={setAllowSound} />
+      <Calculator workouts={workouts} onPlaySound={handlePlaySound} />
+    </main>
+  );
+}
+
+export default App;

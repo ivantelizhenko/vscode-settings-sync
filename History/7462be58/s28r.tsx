@@ -1,0 +1,11 @@
+import { supabase } from "../lib/supabase";
+
+function SupabaseProvider({ children }: { children: ReactNode }) {
+  return (
+    <SupabaseContext.Provider value={supabase}>
+      {children}
+    </SupabaseContext.Provider>
+  );
+}
+
+export default SupabaseProvider;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    nav,
+    menu,
+    section,
+    main,
+    aside {
+      align-content: center;
+      padding-top: 24px;
+    }
+    body {
+      font-family: sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      display: grid;
+      grid-template-columns: 80px 400px 1fr 250px;
+      grid-template-rows: 80px 1fr;
+      height: 100vh;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      color: #fff;
+      grid-row: 1 / -1;
+    }
+    menu {
+      background-color: #845ef7;
+      color: #fff;
+      grid-column: 2 / -1;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: start;
+    }
+    button {
+      background-color: #6741d9;
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+      align-items: start;
+      padding: 8px 12px;
+      border: none;
+      color: #fff;
+    }
+    section {
+      background-color: #ced4da;
+      grid-row: 2;
+    }
+    main {
+      grid-column: 2;
+      grid-column: 3;
+      background-color: #fff;
+    }
+    aside {
+      background-color: #ced4da;
+      grid-row: 2;
+      grid-column: 4;
+    }
+  </style>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark unread</button>
+      <button>Trash</button>
+    </menu>
+    <section>Mails</section>
+    <main>Email views</main>
+    <aside>Additional info</aside>
+  </body>
+</html>

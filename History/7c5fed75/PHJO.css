@@ -1,0 +1,5 @@
+.list {
+  list-style: none;
+  background-color: #f8fff4;
+  height: calc(100vh - var(--header-height));
+}

@@ -1,0 +1,31 @@
+@layer component {
+  /*  Buttons  */
+  .button {
+    font-size: 1.25rem;
+    border: none;
+  }
+
+  .button--icon {
+    background-color: transparent;
+  }
+
+  .button--fill {
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    transition: background-color, 5s;
+    &:hover {
+      transition: background-color, 0.2s;
+      background-color: var(--color-accent-lighter);
+    }
+  }
+
+  /* Dialog */
+  .dialog {
+    z-index: 101;
+    border: none;
+    background-color: var(--color-white);
+    position: absolute;
+  }
+}

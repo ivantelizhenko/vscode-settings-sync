@@ -1,0 +1,8 @@
+import { useQuery } from '@tanstack/react-query';
+import { getGame as getGameAPI } from '../service/supabaseService';
+
+function useGetGame(id: string) {
+  return useQuery({ queryKey: ['game', id], queryFn: () => getGameAPI(id) });
+}
+
+export default useGetGame;

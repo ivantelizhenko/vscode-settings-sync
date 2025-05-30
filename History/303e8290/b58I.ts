@@ -1,0 +1,13 @@
+export async function getUsers() {
+  try {
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+
+    if (!res.ok) throw Error('Failed getting users');
+    const data = await res.json();
+    console.log("i'm here");
+
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+}

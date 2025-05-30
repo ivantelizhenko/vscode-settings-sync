@@ -1,0 +1,11 @@
+export async function getJSON(url: string): Promise<unknown> {
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+
+    if (!res.ok) throw new Error(`${data.message} (${res.status})`);
+    return data;
+  } catch (err) {
+    console.error((err as Error).message);
+  }
+}

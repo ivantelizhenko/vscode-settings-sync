@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:," />
+    <!-- <link rel="icon" type="image/svg" href="/logo-white.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./src/styles/general.css" />
+    <link rel="stylesheet" type="text/css" href="./src/styles/animations.css" />
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
+    <title>Ares</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./logo.svg"
+        alt="Logo"
+        class="logo"
+        id="toPage"
+        data-page-name="main"
+      />
+      <nav class="header__navigation">
+        <ul>
+          <li>
+            <button class="nav__item" id="toPage" data-page-name="notFound">
+              About us
+            </button>
+          </li>
+          <li>
+            <button class="nav__item" id="toPage" data-page-name="contact">
+              Contact
+            </button>
+          </li>
+          <li>
+            <button class="nav__item" id="toPage" data-page-name="news">
+              News
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="open-dialog-subscribe open-dialog-subscribe-desktop button button--fill"
+      >
+        Subscribe
+      </button>
+      <button class="button button--icon" id="open-dialog-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <div class="page" id="main">
+        <section class="hero">
+          <div class="hero__text-container">
+            <h1 class="heading--1 hero__heading">Ares Capital Corporation</h1>
+            <div class="hero__wrapper-sub-heading">
+              <p class="sub-heading hero__sub-heading">
+                A market-leading Business Development Company delivering
+                comprehensive financing solutions to the middle-market.
+              </p>
+              <span class="line"></span>
+            </div>
+          </div>
+          <img src="./hero_image.png" alt="" class="hero__image" />
+        </section>
+        <section class="sub-hero">
+          <div class="sub-hero__text-container">
+            <h3 class="heading--3">One-Stop Solutions</h3>
+            <p class="sub-heading sub-hero__sub-heading">
+              ARCC is a market-leading Business Development Company and one of
+              the largest direct lenders in the U.S.(1)
+            </p>
+          </div>
+        </section>
+        <section class="helping-business">
+          <h3 class="heading--3">Helping Businesses</h3>
+          <div class="items__container">
+            <div class="item">
+              <div class="text-container">
+                <h5 class="heading--5 item__heading">Focused Objectives</h5>
+                <p class="item__text">
+                  Our mission is to create long-term value for our shareholders
+                  through an attractive dividend(2) and favorable investment
+                  performance across economic cycles.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="text-container">
+                <h5 class="heading--5 item__heading">Experienced Management</h5>
+                <p class="item__text">
+                  ARCC is externally managed by a subsidiary of Ares Management
+                  Corporation (NYSE:ARES) (“Ares”) a leading global alternative
+                  investment manager.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="text-container">
+                <h5 class="heading--5 item__heading">
+                  Differentiated Strategy
+                </h5>
+                <p class="item__text">
+                  Our platform merges origination expertise and broad industry
+                  knowledge to offer tailored solutions for the unique financing
+                  needs of private middle-market companies across diverse
+                  industries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="news-preview">
+          <div class="header-np">
+            <h3 class="heading--3">Latest News & Views</h3>
+            <button
+              class="button button-more"
+              id="toPage"
+              data-page-name="news"
+            >
+              View All
+            </button>
+          </div>
+          <div class="items">
+            <div class="item">
+              <p class="text">
+                Ares Capital Corporation Appoints Scott Lem as Chief Financial
+                Officer
+              </p>
+              <div class="info">
+                <button
+                  class="button button-more"
+                  id="toPage"
+                  data-page-name="newDetails"
+                >
+                  More
+                </button>
+                <span class="data">Nov 09/2023</span>
+              </div>
+            </div>
+            <div class="item">
+              <p class="text">
+                Ares Capital Corporation Announces September 30, 2023 Financial
+                Results and...
+              </p>
+              <div class="info">
+                <button
+                  class="button button-more"
+                  id="toPage"
+                  data-page-name="notFound"
+                >
+                  More
+                </button>
+                <span class="data">Oct 24/2023</span>
+              </div>
+            </div>
+            <div class="item">
+              <p class="text">
+                Ares Capital Corporation Schedules Earnings Release for the
+                Third Quarter...
+              </p>
+              <div class="info">
+                <button
+                  class="button button-more"
+                  id="toPage"
+                  data-page-name="notFound"
+                >
+                  More
+                </button>
+                <span class="data">Oct 02/2023</span>
+              </div>
+            </div>
+            <div class="item">
+              <p class="text">
+                Ares Capital Corporation Prices Public Offering of $600 Million
+                7.000%...
+              </p>
+              <div class="info">
+                <button
+                  class="button button-more"
+                  id="toPage"
+                  data-page-name="notFound"
+                >
+                  More
+                </button>
+                <span class="data">Jul 27/2023</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="videos">
+          <div class="video">
+            <h2 class="video__heading">Bloomberg TV: Private credit</h2>
+            <div class="video__wrapper--minor">
+              <h3 class="video__text">Kipp deVeer Head of Ares Credit Group</h3>
+              <img src="./logo-white.svg" alt="Logo" class="logo video__logo" />
+            </div>
+
+            <button class="button button--icon" id="showYoutube">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--color-accent)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-up-right"
+              >
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </button>
+          </div>
+          <div class="video">
+            <h2 class="video__heading">The Rise of Private Markets</h2>
+            <div class="video__wrapper--minor">
+              <h3 class="video__text">
+                Secular Trends in Non-Bank Lending and Their Economic
+                Implications
+              </h3>
+              <img src="./logo-white.svg" alt="Logo" class="logo video__logo" />
+            </div>
+            <button class="button button--icon" id="showYoutube">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--color-accent)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-up-right"
+              >
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section class="subscribe">
+          <div class="dialog-subscribe__text">
+            <h4 class="heading--4 mb-16">Follow the latest news</h4>
+            <p class="dialog__sub-heading mb-20">With our daily newsletter</p>
+            <form class="dialog-subscribe__form">
+              <input placeholder="you@example.com" type="email" required />
+              <button class="button button--fill" type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="page" id="contact">
+        <nav class="breadcrumbs">
+          <ul>
+            <li class="breadcrumbs__item">
+              <p id="toPage" data-page-name="main">Ares Capital Corporation</p>
+              <span class="breadcrumbs__item-icon">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.646447 0.646478C0.817311 0.475614 1.08127 0.453861 1.27535 0.582025L1.35348 0.646478L7.35348 6.64648C7.54874 6.84174 7.54874 7.15825 7.35348 7.35351L1.35348 13.3535C1.15822 13.5488 0.84171 13.5488 0.646447 13.3535C0.451185 13.1582 0.451185 12.8417 0.646447 12.6465L6.29293 6.99999L0.646447 1.35351L0.581994 1.27538C0.45383 1.08131 0.475584 0.817342 0.646447 0.646478Z"
+                    fill="#757575"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--active">
+              <p id="toPage" data-page-name="contact">Contact</p>
+              <span class="breadcrumbs__item-icon">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.646447 0.646478C0.817311 0.475614 1.08127 0.453861 1.27535 0.582025L1.35348 0.646478L7.35348 6.64648C7.54874 6.84174 7.54874 7.15825 7.35348 7.35351L1.35348 13.3535C1.15822 13.5488 0.84171 13.5488 0.646447 13.3535C0.451185 13.1582 0.451185 12.8417 0.646447 12.6465L6.29293 6.99999L0.646447 1.35351L0.581994 1.27538C0.45383 1.08131 0.475584 0.817342 0.646447 0.646478Z"
+                    fill="#757575"
+                  />
+                </svg>
+              </span>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact__image">
+          <img src="./contacts/contact-image.png" />
+        </div>
+        <h2 class="page__heading">Contact</h2>
+        <div class="contact__contacts">
+          <div class="contacts__column">
+            <h4 class="heading--4 contacts__heading">Investor Inquiries</h4>
+            <div class="contacts__block">
+              <p>Phone: (888) 818-5298</p>
+              <p>
+                Email: <span class="contacts__email">IRARCC@aresmgmt.com</span>
+              </p>
+            </div>
+            <div class="contacts__block">
+              <p>John Stilmar</p>
+              <p>
+                Partner, Co-Head of Public Markets <br />
+                Investor Relations
+              </p>
+              <p>Tel: (678) 538-1983</p>
+              <p>
+                Email: <span class="contacts__email"
+                  >jstilmar@aresmgmt.com</span
+                >
+              </p>
+            </div>
+            <div class="contacts__block">
+              <p>Carl Drake</p>
+              <p>
+                Partner, Senior Advisor in the Public <br />
+                Markets Investor Relations and <br />
+                Corporate Communications Group
+              </p>
+              <p>Tel: (678) 538-1981</p>
+              <p>
+                Email: <span class="contacts__email"> cdrake@aresmgmt.com</span>
+              </p>
+            </div>
+            <div class="contacts__block">
+              <p>By Mail:</p>
+              <p>Ares Capital Corporation</p>
+              <p>Attn: John Stilmar</p>
+              <p>One Buckhead Plaza</p>
+              <p>3060 Peachtree Road NW, Suite 800 Atlanta, GA 30305</p>
+            </div>
+          </div>
+          <div class="contacts__column">
+            <h4 class="heading--4 contacts__heading">Media Inquiries</h4>
+            <div class="contacts__block">
+              <p>
+                General and U.S.:
+                <span class="contacts__email">media@aresmgmt.com</span>
+              </p>
+              <p>
+                Europe:
+                <span class="contacts__email"> media.europe@aresmgmt.com</span>
+              </p>
+              <p>
+                Asia-Pacific:
+                <span class="contacts__email"> media.asia@aresmgmt.com</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="news">
+        <nav class="breadcrumbs">
+          <ul>
+            <li class="breadcrumbs__item">
+              <p id="toPage" data-page-name="main">Ares Capital Corporation</p>
+              <span class="breadcrumbs__item-icon">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.646447 0.646478C0.817311 0.475614 1.08127 0.453861 1.27535 0.582025L1.35348 0.646478L7.35348 6.64648C7.54874 6.84174 7.54874 7.15825 7.35348 7.35351L1.35348 13.3535C1.15822 13.5488 0.84171 13.5488 0.646447 13.3535C0.451185 13.1582 0.451185 12.8417 0.646447 12.6465L6.29293 6.99999L0.646447 1.35351L0.581994 1.27538C0.45383 1.08131 0.475584 0.817342 0.646447 0.646478Z"
+                    fill="#757575"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--active">
+              <p id="toPage" data-page-name="news">News</p>
+              <span class="breadcrumbs__item-icon">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.646447 0.646478C0.817311 0.475614 1.08127 0.453861 1.27535 0.582025L1.35348 0.646478L7.35348 6.64648C7.54874 6.84174 7.54874 7.15825 7.35348 7.35351L1.35348 13.3535C1.15822 13.5488 0.84171 13.5488 0.646447 13.3535C0.451185 13.1582 0.451185 12.8417 0.646447 12.6465L6.29293 6.99999L0.646447 1.35351L0.581994 1.27538C0.45383 1.08131 0.475584 0.817342 0.646447 0.646478Z"
+                    fill="#757575"
+                  />
+                </svg>
+              </span>
+            </li>
+          </ul>
+        </nav>
+        <h2 class="page__heading news__heading">Latest News & Views</h2>
+        <div class="news__grid">
+          <div class="news__item">
+            <div class="news-item__image">
+              <img src="./news/image1.png" alt="" class="grid-item__image" />
+            </div>
+            <p class="news-item__heading">
+              Ares Capital Corporation Announces Tax Reporting Information for
+              Calendar Year 2024
+            </p>
+            <div class="news-item__others">
+              <button
+                class="button news__button"
+                id="toPage"
+                data-page-name="newDetails"
+              >
+                More
+              </button>
+              <span class="data">Jan 30/2025</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <div class="news-item__image">
+              <img src="./news/image2.png" alt="" class="grid-item__image" />
+            </div>
+            <p class="news-item__heading">
+              Ares Capital Corporation Schedules Earnings Release for the Fourth
+              Quarter and Fiscal Year Ended December 31, 2024
+            </p>
+            <div class="news-item__others">
+              <button
+                class="button button-more"
+                id="toPage"
+                data-page-name="notFound"
+              >
+                More
+              </button>
+              <span class="data">Jan 24/2025</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <div class="news-item__image">
+              <img src="./news/image3.png" alt="" class="grid-item__image" />
+            </div>
+            <p class="news-item__heading">
+              Ares Capital Corporation Prices Public Offering of $1 Billion
+              5.800% Unsecured Notes Due 2032
+            </p>
+            <div class="news-item__others">
+              <button
+                class="button button-more"
+                id="toPage"
+                data-page-name="notFound"
+              >
+                More
+              </button>
+              <span class="data">Feb 02/2025</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <div class="news-item__image">
+              <img src="./news/image4.png" alt="" class="grid-item__image" />
+            </div>
+            <p class="news-item__heading">
+              Ares Capital Corporation Appoints Jim Miller as Co-President
+            </p>
+            <div class="news-item__others">
+              <button
+                class="button button-more"
+                id="toPage"
+                data-page-name="notFound"
+              >
+                More
+              </button>
+              <span class="data">Feb 22/2023</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <div class="news-item__image">
+              <img src="./news/image5.png" alt="" class="grid-item__image" />
+            </div>
+            <p class="news-item__heading">
+              Ares Capital Corporation Appoints Scott Lem as Chief Financial
+              Officer
+            </p>
+            <div class="news-item__others">
+              <button
+                class="button button-more"
+                id="toPage"
+                data-page-name="notFound"
+              >
+                More
+              </button>
+              <span class="data">Nov 09/2023</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <div class="news-item__image">
+              <img src="./news/image6.png" alt="" class="grid-item__image" />
+            </div>
+            <p class="news-item__heading">
+              Ares Capital Corporation Announces September 30, 2023 Financial
+              Results and...
+            </p>
+            <div class="news-item__others">
+              <button
+                class="button button-more"
+                id="toPage"
+                data-page-name="notFound"
+              >
+                More
+              </button>
+              <span class="data">Oct 24/2023</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <div class="news-item__image">
+              <img src="./news/image7.png" alt="" class="grid-item__image" />
+            </div>
+            <p class="news-item__heading">
+              Ares Capital Corporation Schedules Earnings Release for the Third
+              Quarter...
+            </p>
+            <div class="news-item__others">
+              <button
+                class="button button-more"
+                id="toPage"
+                data-page-name="notFound"
+              >
+                More
+              </button>
+              <span class="data">Oct 02/2023</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <div class="news-item__image">
+              <img src="./news/image8.png" alt="" />
+            </div>
+
+            <p class="news-item__heading">
+              Ares Capital Corporation Prices Public Offering of $600 Million
+              7.000%...
+            </p>
+            <div class="news-item__others">
+              <button
+                class="button button-more"
+                id="toPage"
+                data-page-name="notFound"
+              >
+                More
+              </button>
+              <span class="data">Jul 23/2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="newDetails">
+        <nav class="breadcrumbs">
+          <ul>
+            <li class="breadcrumbs__item">
+              <p id="toPage" data-page-name="main">Ares Capital Corporation</p>
+              <span class="breadcrumbs__item-icon">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.646447 0.646478C0.817311 0.475614 1.08127 0.453861 1.27535 0.582025L1.35348 0.646478L7.35348 6.64648C7.54874 6.84174 7.54874 7.15825 7.35348 7.35351L1.35348 13.3535C1.15822 13.5488 0.84171 13.5488 0.646447 13.3535C0.451185 13.1582 0.451185 12.8417 0.646447 12.6465L6.29293 6.99999L0.646447 1.35351L0.581994 1.27538C0.45383 1.08131 0.475584 0.817342 0.646447 0.646478Z"
+                    fill="#757575"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="breadcrumbs__item">
+              <p id="toPage" data-page-name="news">News</p>
+              <span class="breadcrumbs__item-icon">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.646447 0.646478C0.817311 0.475614 1.08127 0.453861 1.27535 0.582025L1.35348 0.646478L7.35348 6.64648C7.54874 6.84174 7.54874 7.15825 7.35348 7.35351L1.35348 13.3535C1.15822 13.5488 0.84171 13.5488 0.646447 13.3535C0.451185 13.1582 0.451185 12.8417 0.646447 12.6465L6.29293 6.99999L0.646447 1.35351L0.581994 1.27538C0.45383 1.08131 0.475584 0.817342 0.646447 0.646478Z"
+                    fill="#757575"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--active">
+              <p id="toPage" data-page-name="newDetails">Press Releases</p>
+              <span class="breadcrumbs__item-icon">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.646447 0.646478C0.817311 0.475614 1.08127 0.453861 1.27535 0.582025L1.35348 0.646478L7.35348 6.64648C7.54874 6.84174 7.54874 7.15825 7.35348 7.35351L1.35348 13.3535C1.15822 13.5488 0.84171 13.5488 0.646447 13.3535C0.451185 13.1582 0.451185 12.8417 0.646447 12.6465L6.29293 6.99999L0.646447 1.35351L0.581994 1.27538C0.45383 1.08131 0.475584 0.817342 0.646447 0.646478Z"
+                    fill="#757575"
+                  />
+                </svg>
+              </span>
+            </li>
+          </ul>
+        </nav>
+        <div class="new-details__image">
+          <img src="./new-details-image.png" alt="" />
+        </div>
+        <h3 class="new-details__heading">
+          Ares Capital Corporation Announces Tax Reporting Information for
+          Calendar Year 2024
+        </h3>
+        <div class="new-details__main">
+          <p class="new-details__introduction">
+            NEW YORK--(BUSINESS WIRE)-- Ares Capital Corporation (“Ares Capital”
+            or the “Company”) (NASDAQ: ARCC) announced today the tax treatment
+            of the Company’s 2024 common stock distributions (CUSIP #:
+            04010L103).
+          </p>
+          <div class="new-details__block">
+            <h5 class="new-details__sub-heading">
+              ABOUT ARES CAPITAL CORPORATION
+            </h5>
+            <p class="new-details__text">
+              ounded in 2004, Ares Capital is a leading specialty finance
+              company focused on providing direct loans and other investments in
+              private middle market companies in the United States. Ares
+              Capital’s objective is to source and invest in high-quality
+              borrowers that need capital to achieve their business goals, which
+              often times can lead to economic growth and employment. Ares
+              Capital believes its loans and other investments in these
+              companies can help generate attractive levels of current income
+              and potential capital appreciation for investors. Ares Capital,
+              through its investment manager, utilizes its extensive, direct
+              origination capabilities and incumbent borrower relationships to
+              source and underwrite predominantly senior secured loans but also
+              subordinated debt and equity investments. Ares Capital has elected
+              to be regulated as a business development company (“BDC”) and was
+              the largest publicly traded BDC by market capitalization as of
+              December 31, 2024. Ares Capital is externally managed by a
+              subsidiary of Ares Management Corporation (NYSE:ARES), a publicly
+              traded, leading global alternative investment manager. For more
+              information about Ares Capital, visit www.arescapitalcorp.com.
+            </p>
+          </div>
+          <div class="new-details__block">
+            <h5 class="new-details__sub-heading">FORWARD-LOOKING STATEMENTS</h5>
+            <p class="new-details__text">
+              Statements included herein or on the webcast/conference call may
+              constitute “forward-looking statements,” which relate to future
+              events or Ares Capital’s future performance or financial
+              condition. These statements are not guarantees of future
+              performance, condition or results and involve a number of risks
+              and uncertainties. Actual results and conditions may differ
+              materially from those in the forward-looking statements as a
+              result of a number of factors, including those described from time
+              to time in Ares Capital’s filings with the Securities and Exchange
+              Commission. Ares Capital undertakes no duty to update any
+              forward-looking statements made herein or on the
+              webcast/conference call.
+            </p>
+          </div>
+        </div>
+        <div class="new-details__button-container">
+          <button
+            class="new-details__button--back"
+            id="toPage"
+            data-page-name="news"
+          >
+            Back
+          </button>
+        </div>
+      </div>
+      <div class="page" id="notFound">
+        <div class="not-found__wrapper">
+          <h2 class="not-found__text">
+            Sorry :( <br />
+            Page Not Found
+          </h2>
+          <div class="not-found__button-container">
+            <button
+              class="button button--fill not-found__button--back"
+              id="toPage"
+              data-page-name="main"
+            >
+              Back to home
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <img
+        src="./logo-white.svg"
+        alt="Logo"
+        class="logo footer__logo"
+        id="toPage"
+        data-page-name="main"
+      />
+      <nav class="footer__navigation">
+        <ul>
+          <li>
+            <button class="nav__item" id="toPage" data-page-name="notFound">
+              Terms of Use
+            </button>
+          </li>
+          <li>
+            <button class="nav__item" id="toPage" data-page-name="notFound">
+              Privacy Policy
+            </button>
+          </li>
+          <li>
+            <button class="nav__item" id="toPage" data-page-name="contact">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="button button--icon" id="showYoutube">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <rect width="24" height="24" fill="url(#pattern0_0_272)" />
+          <defs>
+            <pattern
+              id="pattern0_0_272"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use xlink:href="#image0_0_272" transform="scale(0.00195312)" />
+            </pattern>
+            <image
+              id="image0_0_272"
+              width="512"
+              height="512"
+              preserveAspectRatio="none"
+              xlink:href="data:image/png;base64,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"
+            />
+          </defs>
+        </svg>
+      </button>
+    </footer>
+
+    <dialog class="dialog dialog-menu">
+      <header class="dialog-menu__header">
+        <img src="./logo.svg" alt="Logo" class="logo" />
+        <button
+          class="button button--icon dialog-menu__button--close"
+          id="close-dialog-menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="rgba(18, 41, 54, 1)"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </header>
+      <nav class="dialog-menu__navigation">
+        <ul>
+          <li>
+            <button class="nav__item" id="toPage" data-page-name="notFound">
+              About us
+            </button>
+          </li>
+          <li>
+            <button class="nav__item" id="toPage" data-page-name="contact">
+              Contact
+            </button>
+          </li>
+          <li>
+            <button class="nav__item" id="toPage" data-page-name="news">
+              News
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="open-dialog-subscribe button button--fill">
+        Subscribe
+      </button>
+    </dialog>
+    <dialog class="dialog dialog-subscribe">
+      <button
+        class="button button--icon dialog-subscribe__button--close"
+        id="close-dialog-subscribe"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="rgba(18, 41, 54, 1)"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-x"
+        >
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <div class="dialog-subscribe__image">
+        <img src="./subscribe-image.jpg" alt="" />
+      </div>
+      <div class="dialog-subscribe__text">
+        <h4 class="heading--4 mb-16">Follow the latest news</h4>
+        <p class="dialog__sub-heading mb-20">With our daily newsletter</p>
+        <form class="dialog-subscribe__form">
+          <input placeholder="you@example.com" type="email" required />
+          <button class="button button--fill" type="submit">Submit</button>
+        </form>
+      </div>
+    </dialog>
+    <div class="toast toast-subscribe--success">
+      Form submitted successfully
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

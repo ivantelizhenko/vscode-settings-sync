@@ -1,0 +1,32 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Monokai Pro",
+  "explorer.confirmDragAndDrop": false,
+  "editor.wordWrap": "on",
+  "editor.language.brackets": [],
+  "workbench.startupEditor": "none",
+  "editor.fontSize": 18,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "window.zoomLevel": -2,
+  "git.autofetch": true,
+  "eslint.run": "onSave",
+  "workbench.iconTheme": "material-icon-theme",
+  "todohighlight.isEnable": true,
+  "git.openRepositoryInParentFolders": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.empty.hint": "hidden",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.sideBar.location": "right"
+}

@@ -1,0 +1,4 @@
+.DS_Store
+.prettierignore
+.gitignore
+.node_modules

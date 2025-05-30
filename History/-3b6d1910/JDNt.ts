@@ -1,0 +1,16 @@
+import { useSearchParams } from 'react-router';
+import { useAppState } from '../contexts/appContext/AppContext';
+import { useFilters } from '../contexts/filtersContext/FiltersContext';
+
+export function useDeleteFilter() {
+  const [deleteFilterContext] = useDeleteFilter();
+  const { deleteFilter } = useFilters();
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  function deleteFilterHook(name: string) {
+    deleteFilterContext(name);
+    searchParams.delete('searchParams');
+    setSearchParams(searchParams);
+  }
+  return [deleteFilterHook];
+}

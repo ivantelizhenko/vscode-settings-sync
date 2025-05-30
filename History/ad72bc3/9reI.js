@@ -1,0 +1,2 @@
+export const TITLE_PRIVIEW_LENGTH = 20;
+export const DESCRIPTION_PRIVIEW_LENGTH = 20;

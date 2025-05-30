@@ -1,0 +1,36 @@
+.toaster__wrappe {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  place-content: center;
+}
+
+.toaster {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  color: var(--white);
+  background-color: hsla(250, 88%, 7%, 1);
+  border-radius: 1100px;
+
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+
+  & p {
+    line-height: 1.25;
+  }
+}
+.toaster__icon {
+  font-size: 36px;
+}
+.toaster__button--close {
+  background-color: transparent;
+  border: none;
+  color: hsla(0, 0%, 60%, 1);
+  font-size: 36px;
+  font-weight: 100;
+}

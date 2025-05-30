@@ -1,0 +1,11 @@
+@media (max-width: 52em) {
+  .nav {
+    display: grid;
+    height: 16rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .nav__items {
+  }
+}

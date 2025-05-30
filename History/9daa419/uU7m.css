@@ -1,0 +1,12 @@
+.toaster {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  background-color: hsla(250, 88%, 7%, 1);
+}
+.toaster__icon {
+}
+.button__close {
+}

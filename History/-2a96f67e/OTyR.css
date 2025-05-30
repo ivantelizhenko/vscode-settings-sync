@@ -1,0 +1,38 @@
+.container {
+  padding: 1.2rem 2rem 1.2rem 2.8rem;
+  border-bottom: 1px solid #3b8f443d;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+
+  font-size: 1.3rem;
+  font-weight: 400;
+  position: relative;
+}
+.containerActive {
+  background-color: #dcffd3;
+  border: none;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  grid-column: 1/-1;
+}
+
+.description {
+  color: #828282;
+}
+
+.highlight {
+  font-size: 2.4rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  border-radius: 50%;
+  font-weight: 700;
+}

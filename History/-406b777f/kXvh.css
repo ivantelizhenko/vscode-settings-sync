@@ -1,0 +1,131 @@
+/* --- 01 TYPOGRAPHY SYSTEM
+
+
+- Font weights:
+Default: 400
+MEDIUM: 500
+SEMI-BOLD: 600
+BOLD: 700
+- Line heights:
+Default: 1
+SMALL: 1.05
+MEDIUM: 1.2 
+PARAGRAPH DEFAULT: 1.6
+
+-letter height: 
+-0.5px
+0.75px
+
+---02 COLORS
+
+- Primary: #e67e22
+- 
+- Tints:
+#fdf2e9
+#fae5d3
+- Shades:#cf711f
+- Accents: 
+- Greys:
+#6f6f6f(lightest grey allowed on #fdf2e9) 
+#555
+#333 
+#888
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+DEFAULT: 9px
+MEDIUM: 11px
+
+--- 07 WHITESPACE
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 16px 20px;
+}
+
+/* NAV BAR */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+}
+
+.logo-bar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo-bar:link,
+.logo-bar:visited {
+  text-decoration: none;
+  color: #666;
+  font-size: 20px;
+}
+
+.logo-icon {
+  height: 35px;
+}
+
+.text-logo:link,
+.text-logo:visited {
+  text-decoration: none;
+}
+
+.navigation-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.today-info {
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.navigation-icon {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
+.profile-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 24px;
+  justify-content: space-between;
+}
+
+.profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: block;
+  align-self: center;
+}
+
+strong {
+  font-weight: 500;
+  font-size: 24px;
+}

@@ -1,0 +1,17 @@
+.App {
+  padding: 48px;
+  display: flex;
+}
+
+.listTitle {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  background-color: #444;
+  padding: 12px 24px;
+}
+
+.title__button {
+  align-self: center;
+}

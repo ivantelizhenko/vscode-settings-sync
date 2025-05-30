@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: false;
+}
+
+@theme {
+  --color-brand: hsla(14, 77%, 54%, 1);
+
+  --color-text: hsla(215, 28%, 17%, 1);
+  --color-text-light: hsla(216, 12%, 84%, 1);
+
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-black: hsla(227, 7%, 24%, 1);
+}

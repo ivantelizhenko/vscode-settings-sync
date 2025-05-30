@@ -1,0 +1,2 @@
+export const CHATGPT_TOKEN =
+  "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";

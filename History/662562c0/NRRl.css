@@ -1,0 +1,271 @@
+/*/////////////////////////////////////////*/
+/* Header Section */
+/*/////////////////////////////////////////*/
+
+.top-bar {
+  width: 100%;
+  height: 2.4rem;
+  background-color: #474747;
+
+  display: flex;
+  padding: 2.4rem 12.8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.main-header {
+  padding: 2.4rem 12.8rem 1.8rem 12.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo:link,
+.logo:visited {
+  text-decoration: none;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.logo-text-header {
+  color: #474747;
+}
+
+.logo-text {
+  display: inline-block;
+  font-family: " Playfair Display", serif;
+  font-size: 4.4rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  font-style: italic;
+}
+
+nav {
+  display: block;
+  align-self: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  list-style: none;
+  overflow: hidden;
+}
+.nav-item {
+  overflow: hidden;
+}
+
+.nav-item:link,
+.nav-item:visited {
+  text-decoration: none;
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  color: #2c2f24;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.4rem 1.6rem;
+}
+
+.nav-item:hover,
+.nav-item:active {
+  color: #ad343e;
+}
+
+.nav-item--active:link,
+.nav-item--active:visited {
+  border-radius: 3.4rem;
+  background: #dbdfd0;
+  color: #2c2f24;
+}
+
+.btn-nav:link,
+.btn-nav:visited {
+  border: 2px solid #2c2f24;
+  color: #182226;
+}
+
+.btn-nav:hover,
+.btn-nav:active {
+  color: #182226;
+  background-color: #e9e9e9;
+}
+
+/*/////////////////////////////////////////*/
+/* title Section */
+/*/////////////////////////////////////////*/
+
+.title-section {
+  padding: 8.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-text {
+  color: #495460 !important;
+}
+
+.menu-page-list {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-page-list:first-child {
+  width: 12rem;
+}
+
+.menu-page-btn:link,
+.menu-page-btn:visited {
+  width: 15rem;
+  height: 5rem;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #2c2f24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dbdfd0;
+  border-radius: 5rem;
+  transition: all 0.5s;
+}
+
+.menu-page-btn:hover,
+.menu-page-btn:active {
+  color: #ad343e;
+  /* background-color: #ad343e; */
+  border-radius: 50px;
+}
+
+.menu-page-btn-active:link,
+.menu-page-btn-active:visited {
+  background-color: #ad343e;
+  color: #fff;
+}
+
+/*/////////////////////////////////////////*/
+/* cards Section */
+/*/////////////////////////////////////////*/
+
+.menu-cards-section {
+  width: 130rem;
+  padding: 2.4rem 12.8rem 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+.menu-section-card {
+  border: 1.5px solid #dbdfd0;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 30rem;
+}
+
+.menu-page-card-img {
+  width: inherit;
+  height: 23rem;
+}
+
+.card-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2.4rem;
+}
+
+.heading-card,
+.card-text-heading,
+.card-text {
+  text-align: center;
+}
+
+.heading-card {
+  color: #ad343e;
+}
+
+.card-text-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/*/////////////////////////////////////////*/
+/* apps Section */
+/*/////////////////////////////////////////*/
+
+.apps-section {
+  padding: 9.6rem 12.8rem;
+  display: grid;
+  column-gap: 9.6rem;
+  grid-template-columns: 1fr 2.5fr;
+  background-color: #f9f9f7;
+}
+
+.apps-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.apps-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.apps-first-box,
+.apps-second-box,
+.apps-third-box {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.apps-first-box {
+  justify-content: center;
+}
+
+.apps-second-box {
+  justify-content: space-around;
+}
+
+.apps-third-box {
+  justify-content: space-around;
+}
+
+.apps-logo-first,
+.apps-logo-second,
+.apps-logo-third {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.08);
+}
+
+.apps-logo-first {
+  padding: 2rem 3.2rem;
+}
+
+.apps-logo-second {
+  padding: 2rem 5.6rem;
+}
+
+.apps-logo-third {
+  padding: 2rem 4rem;
+}

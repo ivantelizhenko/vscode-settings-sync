@@ -1,0 +1,29 @@
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.main {
+  display: flex;
+}
+
+.leftSide {
+  background-color: #f8fff4;
+  height: calc(100vh - var(--header-height));
+  min-width: var(--left-side-width);
+  margin-bottom: auto;
+}
+.rightSide {
+  width: 100%;
+  padding: 1.2rem 2rem;
+}
+
+.loaderBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto 0;
+  max-height: 100%;
+  height: calc(100vh - var(--header-height));
+}

@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "title": "The Little Prince",
+      "author": "",
+      "category": "Fiction",
+      "isbn": ""
+    }
+    {
+      "title": "",
+      "author": "",
+      "category": "Fiction",
+      "isbn": ""
+    }
+    {
+      "title": "",
+      "author": "",
+      "category": "Fiction",
+      "isbn": ""
+    }
+    {
+      "title": "",
+      "author": "",
+      "category": "Fiction",
+      "isbn": ""
+    }
+  ]
+}

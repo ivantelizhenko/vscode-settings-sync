@@ -1,0 +1,17 @@
+.container {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+}
+
+.leftSide {
+  height: 100%;
+  background-color: #f8fff4;
+  width: var(--left-side-width);
+}
+.rightSide {
+  width: 100%;
+  padding: 1.2rem 2rem;
+}

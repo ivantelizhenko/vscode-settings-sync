@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: false;
+}
+
+@layer base {
+  body {
+    @apply h-full bg-red-200;
+  }
+}

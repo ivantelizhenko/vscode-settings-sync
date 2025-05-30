@@ -1,0 +1,44 @@
+import styled from 'styled-components';
+import CarouselLayout from './CarouselLayout';
+import Heading from './Heading';
+import { useEffect } from 'react';
+import { usePage } from '../context/PageContext';
+
+const StyledAppLayout = styled.div`
+  background-color: #525252;
+
+  color: #fcfcfc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 6.4rem 9.6rem;
+  align-items: center;
+  justify-content: start;
+  gap: 4.8rem;
+`;
+
+function AppLayout() {
+  const { setData } = usePage();
+
+  useEffect(() => {
+    async function getData() {
+      const res = await fetch('http://localhost:3000/carts');
+      if (!res.ok) throw new Error('fatch was failed');
+      const data = await res.json();
+      setData(data);
+      console.log(data);
+    }
+    getData();
+  }, [setData]);
+
+  return (
+    <StyledAppLayout>
+      <Heading as="h1">
+        My implementation of carousel component by React
+      </Heading>
+      <CarouselLayout />
+    </StyledAppLayout>
+  );
+}
+
+export default AppLayout;

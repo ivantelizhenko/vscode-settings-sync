@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Roboto", serif;
+    background-color: #fff;
+    color: #21272A;
+    font-size: 16px;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@theme {
+  --color-brand: hsla(14, 77%, 54%, 1);
+
+  --color-black: hsla(215, 28%, 17%, 1);
+  --color-gray: hsla(216, 12%, 84%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+}
+
+@layer components {
+
+
+  body {
+    font-family: "Roboto", serif;
+    background-color: #fff;
+    font-weight: 400;
+    color: #21272A;
+    line-height: 1.5;
+    font-size: 16px;
+>>>>>>> ivan
+}

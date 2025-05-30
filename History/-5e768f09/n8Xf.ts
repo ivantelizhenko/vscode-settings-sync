@@ -1,0 +1,8 @@
+const pieces = {
+white: {
+  p:  
+
+},
+
+
+}

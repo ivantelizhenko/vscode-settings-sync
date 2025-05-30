@@ -1,0 +1,153 @@
+import { useState } from 'react';
+import './App.css';
+
+const info = [
+  {
+    id: 0,
+    sectionName: 'Section title 1!',
+    videos: [
+      { id: 0, videoName: 'Video Name 1', length: 3, checked: true },
+      { id: 1, videoName: 'Video Name 2', length: 19, checked: true },
+      { id: 2, videoName: 'Video Name 3', length: 5, checked: false },
+      { id: 3, videoName: 'Video Name 4', length: 1, checked: false },
+      { id: 4, videoName: 'Video Name 5', length: 4, checked: false },
+    ],
+  },
+  {
+    id: 1,
+    sectionName: 'Section title 2!',
+    videos: [
+      { id: 0, videoName: 'Video Name 1', length: 1, checked: true },
+      { id: 1, videoName: 'Video Name 2', length: 1, checked: true },
+    ],
+  },
+  {
+    id: 2,
+    sectionName: 'Section title 3!',
+    videos: [
+      { id: 0, videoName: 'Video Name 1', length: 1, checked: false },
+      { id: 1, videoName: 'Video Name 2', length: 10, checked: false },
+      { id: 2, videoName: 'Video Name 3', length: 7, checked: false },
+      { id: 3, videoName: 'Video Name 4', length: 9, checked: false },
+      { id: 4, videoName: 'Video Name 5', length: 9, checked: false },
+      { id: 5, videoName: 'Video Name 6', length: 15, checked: false },
+      { id: 6, videoName: 'Video Name 7', length: 3, checked: false },
+      { id: 7, videoName: 'Video Name 8', length: 8, checked: false },
+      { id: 8, videoName: 'Video Name 9', length: 13, checked: false },
+    ],
+  },
+];
+
+function App() {
+  const [sections, setSections] = useState(info);
+
+  const anotherSections = [...sections];
+
+  function canSwitch(sectionId, videoId) {
+    const sectionIdentify = anotherSections[sectionId];
+    const videoIdentify = sectionIdentify.videos[videoId];
+
+    const videoNew = {
+      ...videoIdentify,
+      checked: true,
+    };
+    const videosNew = sectionIdentify.videos.map(el =>
+      el === videoIdentify ? videoNew : el
+    );
+
+    const sectionNew = { ...sectionIdentify, videos: videosNew };
+    const sectionsNew = sections.map(el =>
+      el === sectionIdentify ? sectionNew : el
+    );
+
+    return sectionsNew;
+    // console.log(anotherSections);
+    // console.log(sectionsNew);
+  }
+  // me(0, 4);
+
+  function handleSwitch() {
+    setSections(canSwitch(0, 4));
+  }
+
+  return (
+    <div className="App">
+      {sections.map((section, i) => (
+        <List
+          key={section.id}
+          number={i + 1}
+          name={section.sectionName}
+          videos={section.videos}
+        />
+      ))}
+    </div>
+  );
+}
+
+function List({ number, name, videos }) {
+  return (
+    <div className="list">
+      <ListTitle number={number} name={name} videos={videos} />
+      <ul>
+        {videos.map((video, i) => (
+          <ListItem video={video} key={i} number={i + 1} />
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function ListTitle({ name, number, videos }) {
+  const length = videos.reduce((acc, el) => {
+    return acc + el.length;
+  }, 0);
+  const time =
+    length <= 59
+      ? `${length}min`
+      : `${Math.floor(length / 60)}h ${length % 60}min`;
+
+  return (
+    <div className="list__title">
+      <div>
+        <h2 className="list__title--heading">
+          Section {number}: {name}
+        </h2>
+        <span>
+          {videos.filter(video => video.checked === true).length} /{' '}
+          {videos.length} | {time}
+        </span>
+      </div>
+      <button className="list__button">&darr;</button>
+    </div>
+  );
+}
+
+function ListItem({ number, video }) {
+  const [newChecked, setNewChecked] = useState(video.checked);
+
+  return (
+    <li className="list__item">
+      <input
+        type="checkbox"
+        className="list__item--input"
+        checked={newChecked ? 'checked' : ''}
+        value={newChecked}
+        onChange={() => {
+          setNewChecked(!newChecked);
+        }}
+        onClick={(e, i) => {
+          console.log(e.target.closest('.list__title--heading'));
+        }}
+      />
+      <div>
+        <p className="list__item--heading">
+          <span>{number}</span>.{video.videoName}!
+        </p>
+
+        <p className="list__item--text">{video.length}min</p>
+      </div>
+    </li>
+  );
+}
+
+export default App;

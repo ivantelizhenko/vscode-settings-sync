@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+
+@layer base {
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: calc(1em + 0.5rem);
+    font-weight: 400;
+  }
+}

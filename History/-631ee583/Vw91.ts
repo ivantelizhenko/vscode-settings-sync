@@ -1,0 +1,76 @@
+export interface State {
+  recipe: Partial<Recipe>;
+  search: SearchData;
+  bookmarks: RecipePreview[];
+}
+
+export interface SearchData {
+  query: string;
+  results: RecipePreview[];
+  page: number;
+  resultsPerPage: number;
+}
+
+export type Data<T extends object> = T;
+
+export interface Recipe {
+  id: string;
+  title: string;
+  publisher: string;
+  sourceUrl: string;
+  image: string;
+  servings: number;
+  cookingTime: number;
+  ingredients: Ingredient[];
+  bookmarked: boolean;
+}
+
+/*
+ id: recipe.id,
+      title: recipe.title,
+      publisher: recipe.publisher,
+      sourceUrl: recipe.source_url,
+      image: recipe.image_url,
+      servings: recipe.servings,
+      cookingTime: recipe.cooking_time,
+      ingredients: recipe.ingredients,
+       */
+
+export interface RecipeFromAPI {
+  id: string;
+  title: string;
+  publisher: string;
+  source_url: string;
+  image: string;
+  servings: number;
+  cooking_time: number;
+  ingredients: Ingredient[];
+  bookmarked: boolean;
+}
+
+export interface Ingredient {
+  description: string;
+  quantity: number | null;
+  unit: string;
+}
+
+export interface SearchResultsFromAPI {
+  id: string;
+  title: string;
+  publisher: string;
+  image_url: string;
+}
+
+export interface RecipePreview {
+  id: string;
+  title: string;
+  publisher: string;
+  image: string;
+}
+
+export interface AddRecipe {
+  [k: string]: string;
+}
+
+export type PosibleRenderData = Recipe | RecipePreview[] | SearchData;
+export type PosibleForUpload = RecipeFromAPI;

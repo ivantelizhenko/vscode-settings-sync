@@ -1,0 +1,6 @@
+@media (max-width: 52em) {
+  .nav {
+    display: grid;
+    height: 16rem;
+  }
+}

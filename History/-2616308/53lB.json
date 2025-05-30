@@ -1,0 +1,46 @@
+{
+  "books": [
+    {
+      "title": "The Hunger Games",
+      "id": "57483920494",
+      "author": "Suzanne Collins",
+      "category": "Fiction",
+      "isbn": "9780439023528"
+    },
+    {
+      "title": "How to Keep House While Drowning",
+      "id": "8002858",
+      "author": "Kenneth Culp Davis",
+      "category": "Non-Fiction",
+      "isbn": "9781668002858"
+    },
+    {
+      "title": "A Brief History of Time",
+      "id": ,
+      "author": "Stephen Hawking",
+      "category": "Science",
+      "isbn": "9780553380163"
+    },
+    {
+      "title": "Be Useful: Seven Tools for Life",
+      "id": ,
+      "author": "Arnold Schwarzenegger",
+      "category": "Non-Fiction",
+      "isbn": "9780593655955"
+    },
+    {
+      "title": "The Selfish Gene",
+      "id": ,
+      "author": "Richard Dawkins",
+      "category": "Science",
+      "isbn": "9780199291151"
+    },
+    {
+      "title": "1984",
+      "id": ,
+      "author": "Dzhordzh Orvell",
+      "category": "Fiction",
+      "isbn": "0452284236"
+    }
+  ]
+}

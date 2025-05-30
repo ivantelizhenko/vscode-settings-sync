@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "name": "chess",
+      "path": "../../../../../Desktop/vscode/chess"
+    },
+    {
+      "name": "chessboardjs-1.0.0",
+      "path": "../../../../../Downloads/chessboardjs-1.0.0"
+    }
+  ],
+  "settings": {}
+}

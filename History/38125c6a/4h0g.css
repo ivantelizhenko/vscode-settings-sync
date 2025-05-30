@@ -1,0 +1,5 @@
+@keyframes liftUp {
+  from {
+    bottom: -16px;
+  }
+}

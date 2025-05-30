@@ -1,0 +1,14 @@
+.container {
+  padding: 1.2rem 2rem 1.2rem 2.8rem;
+  border-bottom: 1px solid #3b8f4355;
+}
+.containerActive {
+  background-color: #dcffd3;
+}
+
+.title {
+}
+.date {
+}
+.description {
+}

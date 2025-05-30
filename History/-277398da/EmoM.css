@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  background-color: #f8fff4;
+  width: 100%;
+  height: var(--header-height);
+  padding: 2.8rem 0;
+}
+
+.logo__container {
+  width: var(--left-side-width);
+  display: flex;
+  gap: 1rem;
+}
+
+.logo__image {
+  object-fit: cover;
+  width: 4rem;
+  height: 4rem;
+}
+
+.logo__name {
+  word-spacing: 100rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 18.75px;
+  color: #219653;
+}
+.button__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.button__add {
+}
+.button__remove {
+}
+.search {
+}

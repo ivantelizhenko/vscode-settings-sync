@@ -1,0 +1,59 @@
+'use strict';
+
+const btnCheck = document.querySelector('.check');
+const btnAgain = document.querySelector('.again');
+const inputGuess = document.querySelector('.guess');
+const number = document.querySelector('.number');
+const message = document.querySelector('.message');
+const score = document.querySelector('.score');
+const highscore = document.querySelector('.highscore');
+let gameAvailable = true;
+
+let randomNumber = Math.trunc(Math.random() * 20 + 1);
+const youWin = () => {
+  if (gameAvailable) {
+    document.body.style.backgroundColor = '#60b347';
+    number.textContent = randomNumber;
+    message.textContent = '🏆 Correct answer!';
+    if (highscore.textContent < score.textContent) {
+      highscore.textContent = score.textContent;
+    }
+    gameAvailable = false;
+  }
+};
+
+const youLose = () => {
+  if (gameAvailable) {
+    score.textContent = 0;
+    message.textContent = '😔You lose...';
+    gameAvailable = false;
+  }
+};
+
+let caclScore = 20;
+
+btnCheck.addEventListener('click', function () {
+  if (gameAvailable) {
+    const input = Number(inputGuess.value);
+    score.textContent = caclScore;
+    if (input === randomNumber && input !== 0) {
+      youWin();
+    } else if (input === 0) {
+      score.textContent = caclScore;
+      message.textContent = '⛔️ Not a Number';
+      caclScore > 0 ? caclScore-- : youLose();
+    } else {
+      score.textContent = caclScore;
+      message.textContent = input > randomNumber ? '📈Too high' : '📉Too low';
+      caclScore > 0 ? caclScore-- : youLose();
+    }
+  }
+});
+
+btnAgain.addEventListener('click', () => {
+  message.textContent = 'Start guessing...';
+  gameAvailable = true;
+  document.body.style.backgroundColor = '#222';
+  caclScore = 20;
+  score.textContent = caclScore;
+});

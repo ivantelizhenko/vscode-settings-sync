@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  background-color: #f8fff4;
+  width: 100%;
+  height: var(--header-height);
+}
+
+.button__container {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2.8rem;
+  align-items: center;
+}
+
+.search {
+}

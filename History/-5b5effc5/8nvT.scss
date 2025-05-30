@@ -1,0 +1,31 @@
+.header {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start/ col-end 6;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.93),
+      rgba($color-secondary, 0.93)
+    ),
+    url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+
+  &__logo {
+  }
+
+  &__seenon-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__seenon-logos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    img {
+      height: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+import { useState } from 'react';
+import styles from './ListItem.module.css';
+import { formatListItemNote } from '../Utils/helpers';
+import { useSelectedNote } from '../Contexts/SelectedNoteContext';
+import { TITLE_PRIVIEW_LENGTH } from '../Utils/constants';
+
+function ListItem({ data }) {
+  const { title = 'Нова нотатка', description, date, id } = data;
+  const { selectedNote, setSelectedNote } = useSelectedNote();
+
+  return (
+    <div
+      className={`${styles.container} ${
+        selectedNote === id ? styles.containerActive : ''
+      }`}
+      onClick={() => {
+        setSelectedNote(id);
+      }}
+    >
+      <h2 className={styles.title}>
+        {title.length < 1
+          ? 'Нова нотатка'
+          : title.length > TITLE_PRIVIEW_LENGTH
+          ? `${title.slice(0, TITLE_PRIVIEW_LENGTH)}...`
+          : title}
+      </h2>
+      <span>{formatListItemNote(date)}</span>
+      <p className={styles.description}>
+        {description.length < 1
+          ? 'Ще немає тексту'
+          : description.length > 23
+          ? `${description.slice(0, 23)}...`
+          : description}
+      </p>
+    </div>
+  );
+}
+
+export default ListItem;

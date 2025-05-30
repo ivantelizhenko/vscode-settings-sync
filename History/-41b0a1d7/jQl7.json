@@ -1,0 +1,66 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Monokai Pro",
+  "explorer.confirmDragAndDrop": false,
+  "editor.wordWrap": "on",
+  "editor.language.brackets": [],
+  "workbench.startupEditor": "none",
+  "editor.fontSize": 18,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "window.zoomLevel": -2,
+  "git.autofetch": true,
+  "eslint.run": "onSave",
+  "workbench.iconTheme": "material-icon-theme",
+  "todohighlight.isEnable": true,
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "#000000",
+      "backgroundColor": "#FFFF00"
+    },
+    {
+      "text": "FIXME:",
+      "color": "#FFFFFF",
+      "backgroundColor": "#FF5555"
+    },
+    {
+      "text": "BUG:",
+      "color": "#FFFFFF",
+      "backgroundColor": "#FF0000"
+    },
+    {
+      "text": "NOTE:",
+      "color": "#000000",
+      "backgroundColor": "#ADD8E6"
+    }
+  ],
+  "git.openRepositoryInParentFolders": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.empty.hint": "hidden",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "path-intellisense.showHiddenFiles": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "json.schemas": [],
+  "css.lint.unknownAtRules": "ignore",
+  "workbench.settings.applyToAllProfiles": [],
+  "workbench.editorAssociations": {
+    "*.woff2": "default"
+  },
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  }
+}

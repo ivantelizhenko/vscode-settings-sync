@@ -1,0 +1,32 @@
+import { useSearchParams } from 'react-router';
+import { useFilters } from '../contexts/filtersContext/FiltersContext';
+
+export function useToggleFilter() {
+  const [searchParams, setSeachParams] = useSearchParams();
+  const { toggleFilterState } = useFilters();
+
+  function toggleFilter(name: string, value: string) {
+    toggleFilterState(name, value);
+
+    let valueSetArray: string[];
+    const existingFilters = searchParams.get(name)?.split(',') || [];
+    valueSetArray = existingFilters;
+
+    const comparisonIndex = valueSetArray.findIndex(el => el === value);
+
+    if (valueSetArray.length === 0) {
+      valueSetArray = [value];
+    } else if (valueSetArray.length > 0 && comparisonIndex === -1) {
+      valueSetArray = [...valueSetArray, value];
+    } else if (valueSetArray.length > 0 && comparisonIndex > -1) {
+      valueSetArray = valueSetArray.filter(el => el !== value);
+    }
+
+    searchParams.set(name, valueSetArray.join(','));
+
+    if (!valueSetArray.at(0)) searchParams.delete(name);
+    setSeachParams(searchParams);
+  }
+
+  return [toggleFilter];
+}

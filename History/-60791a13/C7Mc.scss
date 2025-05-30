@@ -1,0 +1,16 @@
+.footer {
+  background-color: $color-secondary;
+  grid-column: full-start/full-end;
+  padding: 8rem;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+
+  &__item {
+  }
+
+  &__link {
+  }
+}

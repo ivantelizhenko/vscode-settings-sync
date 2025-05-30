@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.data {
+  font-size: 1.3rem;
+}
+
+.input,
+.textarea {
+  border: 1px solid #3b8f443d;
+  color: #3b8f44;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  padding: 1.2rem;
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: #3b8f443d;
+}
+
+.inputTitle {
+}
+
+.textarea {
+  /* height: 30rem; */
+  max-height: calc(100vh - var(--header-hight));
+  /* resize: none; */
+  padding: 1.2rem;
+  font-size: 1.4rem;
+}

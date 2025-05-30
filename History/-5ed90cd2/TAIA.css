@@ -1,0 +1,293 @@
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: #1098ad 10px solid;
+  /* margin: 0px;
+  padding: 0px; */
+  position: relative;
+  display: block;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+.mainheader {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 100px;
+  /* margin: 0px 50px; */
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  width: 500px;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-left: 10px;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+/*footer p {
+  font-size: 16px;
+}*/
+/*article header p {
+  font-style: italic;
+}*/
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+#copyright {
+  font-size: 16px;
+}
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+.related-post {
+  list-style: none;
+  color: #1098ad;
+  margin-left: 0px;
+  padding-top: 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0px;
+}
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ad;
+}
+a:hover {
+  text-decoration: underline;
+  color: orangered;
+  font-weight: bold;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+nav {
+  font-size: 18px;
+  padding: 0px 0px;
+}
+nav a:link {
+  margin: 15px;
+}
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* bottom: 50px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
+}
+
+article {
+  margin-bottom: 0px;
+}
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  padding: 5px 10px;
+  color: black;
+  top: -10px;
+  right: -25px;
+}
+
+.author {
+  padding-left: 15px;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 15px;
+  /* margin-left: 12px; */
+}
+
+/* Float layout*/
+
+/*h1 {
+  float: left;
+}
+nav {
+  float: right;
+  padding-top: 7px;
+  padding-left: 5px;
+  display: block;
+}
+
+}
+
+/* .relatedposts {
+  float: right;
+  width: 70%;
+} 
+article {
+  float: left;
+  width: 825px;
+}
+aside {
+  float: right;
+  width: 300px;
+  padding-top: 50px;
+}
+footer {
+  clear: both;
+}
+*/
+
+.mainheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.related-item {
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.related-author {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  /* margin-bottom: 5px; */
+  display: block;
+}
+.text-item {
+  display: flex;
+  align-items: center;
+}
+/*Flexbox Layout*/
+/* .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+article {
+  flex: 0 0 825;
+  margin-bottom: 0;
+}
+aside {
+  flex: 0 0 300px;
+  height: 450px;
+  padding: 30px;
+  padding-top: 40px;
+  padding-left: 40px;
+}*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 1fr 10fr 1fr;
+  row-gap: 60px;
+  column-gap: 75px;
+}
+
+.mainheader {
+  grid-column: 1/-1;
+}
+
+aside {
+  width: 350px;
+  display: grid;
+  align-items: start;
+  align-self: start;
+}
+/* .related-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+} */
+.related-author {
+  display: block;
+}
+
+footer {
+  grid-column: 1/-1;
+  align-self: end;
+  justify-self: start;
+}

@@ -1,0 +1,30 @@
+import { useState } from 'react';
+import styles from './ListItem.module.css';
+
+function ListItem({ data }) {
+  const [active, setActive] = useState(false);
+  const { title = 'Нова нотатка', description, date } = data;
+
+  return (
+    <div
+      className={`${styles.container} ${active ? styles.containerActive : ''}`}
+      onClick={() => {
+        console.log('hey');
+      }}
+    >
+      <h2 className={styles.title}>
+        {title.length < 1 ? 'Нова нотатка' : title}
+      </h2>
+      <span>{date}</span>
+      <p className={styles.description}>
+        {description.length < 1
+          ? 'Ще немає тексту'
+          : description.length > 23
+          ? `${description.slice(0, 23)}...`
+          : description}
+      </p>
+    </div>
+  );
+}
+
+export default ListItem;

@@ -1,0 +1,20 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoImage {
+  object-fit: cover;
+  width: 4rem;
+  height: 4rem;
+}
+
+.logoName {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 18.75px;
+  color: #219653;
+}

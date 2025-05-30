@@ -1,0 +1,21 @@
+@layer component {
+  /*  Buttons  */
+  .button--icon {
+  }
+
+  .button--fill {
+    font-size: 1.25rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+
+    transition: background-color, 5s;
+
+    &:hover {
+      transition: background-color, 0.2s;
+      background-color: var(--color-accent-lighter);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+const icons = require("../../img/icons.svg") as string;
+import View from "./View.js";
+
+class PreviewView extends View {
+  parentElement = document.querySelector("") as HTMLElement;
+
+  generateMarkup = () => {
+    const id = window.location.hash.slice(1);
+
+    if (this.data) {
+      return `
+      <li class="preview">
+      <a class="preview__link ${
+        this.data.id === id ? "preview__link--active" : ""
+      }" href="#${this.data.id}">
+        <figure class="preview__fig">
+        <img src="${this.data.image}" alt="${this.data.title}" />
+        </figure>
+        <div class="preview_data">
+        <h4 class="preview__title">${this.data.title}</h4>
+        <p class="preview__publisher">${this.data.publisher}</p>
+        <div class="recipe__user-generated ${this.data.key ? "" : "hidden"}">
+        <svg>
+        <use href="${icons}#icon-user"></use>
+        </svg>
+        </div>
+        </div>  
+        </a>
+        </li>
+        `;
+    } else return;
+  };
+}
+
+export default new PreviewView();
+
+65
+
+You need to provide a constraint for your generic type as follows: <T extends { id?: string }>
+
+Update the line const updateArrayOfObjects = <T>(arrayOfObjects: T[], newObject: T, deleteObject: boolean = false): T[] => {
+
+to const updateArrayOfObjects = <T extends { id?: string }>(arrayOfObjects: T[], newObject: T, deleteObject: boolean = false): T[] => {

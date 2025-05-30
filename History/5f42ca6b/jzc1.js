@@ -1,0 +1,7 @@
+'use strict';
+
+const btnClose = document.querySelector('.btn__close');
+const btnNext = document.querySelector('.btn__next');
+const btnOpen = document.querySelector('header__btn');
+
+btnOpen.addEventListener('click', function () {});

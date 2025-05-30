@@ -1,0 +1,53 @@
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary--lighter: hsl(45deg, 100%, 50%);
+  --color-secondary--darked: hsl(45deg, 100%, 40%);
+
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-very-dark: hsl(0deg, 0%, 10%);
+  --color-dark: hsl(0deg, 0%, 30%);
+  --color-medium: hsl(0deg, 0%, 40%);
+  --color-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.max-width-wrapper {
+  height: 50%;
+}
+.max-width-wrapper.header {
+}
+.max-width-wrapper.main {
+  background-color: var(--color-medium);
+}
+
+.intro-chunk {
+}
+.titleHuckleberry {
+}
+
+.card {
+  border-top: 8px solid hsla(0, 0%, 40%, 1);
+  background-color: var(--color-white);
+}
+.indented-heading {
+}

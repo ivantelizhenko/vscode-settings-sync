@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pagination component</title>
+
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      /*
+      MAIN COLOR: #087F5B
+      GRAY COLOR: #343A40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+      }
+      .container {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-arrow {
+        height: 48px;
+        width: 48px;
+        padding: 8px;
+        border-radius: 50%;
+        border: 1px solid #087f5b;
+        background-color: #fff;
+      }
+      .btn-arrow:hover {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        border: 1px solid #087f5b;
+        background-color: #087f5b;
+        cursor: pointer;
+      }
+      .btn-icon {
+        stroke: #087f5b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-icon:hover {
+        stroke: #fff;
+      }
+      .btn-number {
+        height: 36px;
+        width: 36px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: none;
+        font-size: 18px;
+        display: block;
+        padding: 4px;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-number:hover {
+        height: 36px;
+        width: 36px;
+        background-color: #087f5b;
+        color: #fff;
+        border-radius: 50%;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .btn-on {
+        height: 36px;
+        width: 36px;
+        background-color: #087f5b;
+        color: #fff;
+        border-radius: 50%;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn-arrow">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn-number">1</button>
+      <button class="btn-number">2</button>
+      <button class="btn-number btn-on">3</button>
+      <button class="btn-number">4</button>
+      <button class="btn-number">5</button>
+      <button class="btn-number">6</button>
+      <spon>...</spon>
+      <button class="btn-number">23</button>
+      <button class="btn-arrow">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

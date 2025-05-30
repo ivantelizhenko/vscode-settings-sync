@@ -1,0 +1,22 @@
+import { ChangeEvent, useState } from 'react';
+
+type HandleChangeEventProp = ChangeEvent<HTMLInputElement | HTMLSelectElement>;
+
+type useFormReturnType<InitialStateType> = [
+  values: InitialStateType,
+  (e: HandleChangeEventProp) => void
+];
+
+export function useForm<InitialStateType>(initialState: InitialStateType) {
+  const [values, setValues] = useState(initialState);
+
+  function handleChange(e: HandleChangeEventProp) {
+    console.log(e.target);
+    setValues(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  }
+
+  return [values, handleChange] as useFormReturnType<InitialStateType>;
+}

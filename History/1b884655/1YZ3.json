@@ -1,0 +1,172 @@
+{
+  "carts": [
+    {
+      "name": "House",
+      "description": "Nestled deep in the forest, this charming house blends seamlessly with its surroundings.",
+      "stats": {
+        "color": "red",
+        "comfort": "7",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "autumn"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (1).png"
+    },
+    {
+      "name": "Big Ben",
+      "description": "Big Ben is the Great Bell of the clock at the Palace of Westminster. Completed in 1859, it stands 316 feet tall and is a symbol of the UK, known for its distinctive chimes.",
+      "stats": {
+        "color": "blue",
+        "comfort": "4",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "spring"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (2).png"
+    },
+    {
+      "name": "Statue of Liberty",
+      "description": "The Statue of Liberty, a gift from France in 1886, stands on Liberty Island in New York Harbor. It symbolizes freedom and democracy, featuring a robed figure holding a torch.",
+      "stats": {
+        "color": "blue",
+        "comfort": "4",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "spring"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (3).png"
+    },
+    {
+      "name": "Niagara falls",
+      "description": "Niagara Falls is a major natural attraction on the U.S.-Canada border, featuring three powerful waterfalls: Horseshoe Falls, American Falls, and Bridal Veil Falls.",
+      "stats": {
+        "color": "turquoise",
+        "comfort": "8",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "summer"
+      }
+    },
+    {
+      "name": "Eiffel tower",
+      "description": "The Eiffel Tower, completed in 1889, is a wrought-iron landmark in Paris, known for its distinctive design and stunning city views.",
+      "stats": {
+        "color": "pink",
+        "comfort": "6",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "summer"
+      }
+    },
+    {
+      "name": "Sydney Opera House",
+      "description": "The Sydney Opera House is an iconic performing arts center in Sydney, Australia, known for its distinctive sail-like design and stunning harbor views.",
+      "stats": {
+        "color": "turquoise",
+        "comfort": "8",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "summer"
+      }
+    },
+    {
+      "name": "Taj Mahal",
+      "description": "The Taj Mahal is a stunning white marble mausoleum in Agra, India, built by Emperor Shah Jahan in the 17th century in memory of his wife Mumtaz Mahal.",
+      "stats": {
+        "color": "white",
+        "comfort": "8",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "summer"
+      }
+    },
+    {
+      "name": "Giraffe",
+      "description": "A giraffe is a tall African mammal known for its long neck, legs, and distinctive spotted coat. It is the tallest land animal and primarily feeds on leaves from trees.",
+      "stats": {
+        "color": "orange",
+        "comfort": "7",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "summer"
+      }
+    },
+    {
+      "name": "White bear",
+      "description": "A polar bear is a large white bear native to the Arctic, known for its thick fur and ability to swim long distances. It primarily hunts seals and is well adapted to cold environments.",
+      "stats": {
+        "color": "white",
+        "comfort": "5",
+        "tree": "no",
+        "time of day": "day",
+        "season": "winter"
+      }
+    },
+    {
+      "name": "Hawai",
+      "description": "Hawaii is a U.S. state located in the central Pacific Ocean, known for its beautiful beaches, volcanic landscapes, and diverse culture. It consists of an archipelago of islands, with Honolulu on Oahu being the state capital.",
+      "stats": {
+        "color": "green",
+        "comfort": "8",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "summer"
+      }
+    },
+    {
+      "name": "Great Wall of China",
+      "description": "The Great Wall of China is an extensive series of fortifications made of various materials, stretching over 13,000 miles. Built to protect against invasions, it is one of the most impressive architectural feats in history.",
+      "stats": {
+        "color": "green",
+        "comfort": "6",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "spring"
+      }
+    },
+    {
+      "name": "City",
+      "description": "A city is a large, densely populated urban area with complex infrastructure, including buildings, roads, and services. It serves as a hub for commerce, culture, and governance.",
+      "stats": {
+        "color": "black",
+        "comfort": "4",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "spring"
+      }
+    },
+    {
+      "name": "Desert",
+      "description": "A desert is a barren, arid region with minimal vegetation and low precipitation. It often features sand dunes, rocky landscapes, and extreme temperature variations.",
+      "stats": {
+        "color": "orangered",
+        "comfort": "2",
+        "tree": "no",
+        "time of day": "day",
+        "season": "summer"
+      }
+    },
+    {
+      "name": "Farm",
+      "description": "A farm is a tract of land used for growing crops and raising animals. It includes buildings and equipment necessary for agricultural activities, such as fields, barns, and silos.",
+      "stats": {
+        "color": "green",
+        "comfort": "10",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "spring"
+      }
+    },
+    {
+      "name": "Forest",
+      "description": "A winter forest is a wooded area covered in snow and ice, with bare trees and a quiet, serene atmosphere. It features a stark, tranquil beauty, often with frosted branches and a blanket of snow on the ground.",
+      "stats": {
+        "color": "blue",
+        "comfort": "10",
+        "tree": "yes",
+        "time of day": "day",
+        "season": "winter"
+      }
+    }
+  ]
+}

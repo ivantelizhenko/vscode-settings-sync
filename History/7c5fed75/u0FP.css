@@ -1,0 +1,10 @@
+.list {
+  list-style: none;
+  /* background-color: #f8fff4; */
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  margin: 0;
+  background-color: red;
+  flex-grow: auto;
+}

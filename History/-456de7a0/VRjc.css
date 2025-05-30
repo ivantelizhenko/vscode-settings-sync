@@ -1,0 +1,19 @@
+.container {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - var(--header-height));
+}
+
+.leftSide {
+  /* background-color: #f8fff4; */
+  background-color: red;
+  width: var(--left-side-width);
+  margin-bottom: auto;
+}
+.rightSide {
+  width: 100%;
+  padding: 1.2rem 2rem;
+}

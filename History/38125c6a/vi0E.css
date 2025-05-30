@@ -1,0 +1,10 @@
+@keyframes liftUp {
+  from {
+    bottom: -48px;
+  }
+
+  to {
+    bottom: 48px;
+    opacity: 0;
+  }
+}

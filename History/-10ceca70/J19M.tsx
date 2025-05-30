@@ -1,0 +1,97 @@
+import { createContext, useContext, useReducer } from 'react';
+import {
+  Action,
+  Tab,
+  TabsContextProviderProps,
+  TabsContextValue,
+  TabsState,
+} from './TabsContextType';
+
+const TabsContext = createContext<TabsContextValue | null>(null);
+
+const initialState: TabsState = {
+  tabs: [
+    { title: 'title 1', id: XA86yi55Vi },
+    { title: 'title 2', id: 3hGd9ZC8z6 },
+    { title: 'title 3', id: Vv9c8Be2Z8 },
+    { title: 'title 4', id: 8742mNdbDS },
+    { title: 'title 5', id: Mv2558DgtU },
+    { title: 'title 6', id: sA3VAak294 },
+    { title: 'title 7', id: f3V78R8Fed' },
+    { title: 'title 8', id: v54SH6Dyk3 },
+    { title: 'title 9', id: 867CGsJie3 },
+    { title: 'title 10', id: 867CGsJie3 },
+    
+  ],
+  activeId: null,
+};
+
+function tabsReducer(state: TabsState, action: Action): TabsState {
+  switch (action.type) {
+    case 'tab/add': {
+      return {
+        ...state,
+        tabs: [...state.tabs, action.payload],
+      };
+    }
+    case 'tab/remove': {
+      return {
+        ...state,
+        tabs: state.tabs.filter((tab: Tab) => {
+          console.log(tab.id !== action.payload);
+          return tab.id !== action.payload;
+        }),
+      };
+    }
+    case 'tab/move': {
+      return {
+        ...state,
+        tabs: action.payload,
+      };
+    }
+    case 'activeId/remove': {
+      return { ...state, activeId: null };
+    }
+    case 'activeId/set': {
+      return { ...state, activeId: action.payload };
+    }
+    default:
+      throw new Error('Unknown action type');
+  }
+}
+
+function TabsProvider({ children }: TabsContextProviderProps) {
+  const [tabsState, dispatch] = useReducer(tabsReducer, initialState);
+
+  const ctx: TabsContextValue = {
+    ...tabsState,
+    addTab(newTab) {
+      dispatch({ type: 'tab/add', payload: newTab });
+    },
+    removeTab(id) {
+      dispatch({ type: 'tab/remove', payload: id });
+    },
+    setActiveId(id) {
+      dispatch({ type: 'activeId/set', payload: id });
+    },
+    removeActiveId() {
+      dispatch({ type: 'activeId/remove' });
+    },
+    setTabs(newTabs) {
+      dispatch({ type: 'tab/move', payload: newTabs });
+    },
+  };
+
+  return <TabsContext.Provider value={ctx}>{children}</TabsContext.Provider>;
+}
+
+function useTabs() {
+  const context = useContext(TabsContext);
+  if (context === undefined)
+    throw new Error('BooksContext was used outside of the BooksProvider');
+
+  return context as TabsContextValue;
+}
+
+// eslint-disable-next-line react-refresh/only-export-components
+export { TabsProvider, useTabs };

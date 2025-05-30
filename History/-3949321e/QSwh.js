@@ -1,0 +1,32 @@
+'use strict';
+
+const minimumLength = function (s) {
+  const array = s.split('');
+
+  for (let i = 0; i < array.length + 10; i++) {
+    if (array.at(0) !== array.at(-1) || array.length === 0) return array.length;
+    let elDel = array.at(0);
+    for (let i = 0; i < s.length; i++) {
+      if (elDel !== array.at(0)) break;
+      array.splice(0, 1);
+    }
+
+    for (let i = 0; i < s.length; i++) {
+      if (elDel !== array.at(-1)) break;
+      array.splice(-1, 1);
+    }
+  }
+};
+
+console.log(minimumLength('ca'));
+console.log(minimumLength('cabaabac'));
+console.log(minimumLength('aabccabba'));
+console.log(minimumLength('cabacbac'));
+console.log(
+  minimumLength(
+    'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb'
+  )
+);
+console.log(
+  minimumLength('"bbbbbbbbbbbbbbbbbbbbbbbbbbbabbbbbbbbbbbbbbbccbcbcbccbbabbb"')
+);

@@ -1,0 +1,40 @@
+{
+  "examples": [
+    {
+      "title": "title1",
+      "description": "description1",
+      "number": 1,
+      "color": "red"
+    },
+    {
+      "title": "title2",
+      "description": "description2",
+      "number": 2,
+      "color": "pink"
+    },
+    {
+      "title": "title13",
+      "description": "description13",
+      "number": 13,
+      "color": "purple"
+    },
+    {
+      "title": "title4",
+      "description": "description4",
+      "number": 4,
+      "color": "blue"
+    },
+    {
+      "title": "title15",
+      "description": "description15",
+      "number": 22,
+      "color": "orange"
+    },
+    {
+      "title": "title78",
+      "description": "description78",
+      "number": 78,
+      "color": "green"
+    }
+  ]
+}

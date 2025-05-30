@@ -1,0 +1,8 @@
+.toaster {
+  display: flex;
+  gap: 10px;
+}
+.toaster__icon {
+}
+.button__close {
+}

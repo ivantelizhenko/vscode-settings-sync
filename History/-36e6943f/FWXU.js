@@ -1,0 +1,71 @@
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { getProducts } from "./services/getProducts";
+import { postProduct } from "./services/postProduct";
+
+const initialState = {
+  status: "idle",
+  products: [],
+  currentProduct: {},
+  error: "",
+};
+
+export const fetchProducts = createAsyncThunk(
+  "products/getProducts",
+  async function () {
+    const data = await getProducts();
+    return data;
+  }
+);
+
+export const addProduct = createAsyncThunk(
+  "products/postProducts",
+  async function (data) {
+    await postProduct(data);
+  }
+);
+
+const productsSlice = createSlice({
+  name: "products",
+  initialState,
+  reducers: {
+    removeProduct(state, action) {
+      // action.payload === product.id
+      state.products = state.products.filter(
+        (prod) => prod.id !== action.payload
+      );
+    },
+    setCurrentProduct(state, action) {
+      // action.payload === product.id
+      state.currentProduct = state.products.find(
+        (prod) => prod.id === action.payload
+      );
+    },
+  },
+  extraReducers: (builder) =>
+    builder
+      .addCase(fetchProducts.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(fetchProducts.fulfilled, (state, action) => {
+        state.products = action.payload;
+        state.status = "idle";
+      })
+      .addCase(fetchProducts.rejected, (state) => {
+        state.status = "error";
+        state.error = "Something went wrong with fetching products ";
+      })
+      .addCase(addProduct.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(addProduct.fulfilled, (state) => {
+        state.status = "idle";
+      })
+      .addCase(addProduct.rejected, (state, action) => {
+        state.status = "error";
+        state.error = "Something went wrong with fetching products ";
+      }),
+});
+
+export const { removeProduct, setCurrentProduct } = productsSlice.actions;
+
+export default productsSlice.reducer;

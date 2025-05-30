@@ -1,0 +1,25 @@
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+}
+
+.leftSide {
+  z-index: -1;
+  width: var(--left-side-width);
+}
+.rightSide {
+  z-index: -1;
+  padding: 1.2rem 2rem;
+  width: auto;
+  background-color: aqua;
+}
+
+.title {
+}
+.description {
+}

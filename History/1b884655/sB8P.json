@@ -1,0 +1,151 @@
+{
+  "cats": [
+    {
+      "name": "Cat 1",
+      "description": "Meow meow meow Meow meow meow Meow meow meowm Meow meow meowm Meow meow meowm",
+      "stats": {
+        "meow1": "meow",
+        "meow2": "meow",
+        "meow3": "meow",
+        "meow4": "meow",
+        "meow5": "meow"
+      },
+      "image": "https://cdn2.thecatapi.com/images/d5.png"
+    },
+    {
+      "name": "Big Ben",
+      "description": "Big Ben is the Great Bell of the clock at the Palace of Westminster. Completed in 1859, it stands 316 feet tall and is a symbol of the UK, known for its distinctive chimes.",
+      "stats": {
+        "color": "blue",
+        "comfort": "4",
+        "tree": "yes",
+        "timeOfDay": "day",
+        "season": "spring"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (2).png"
+    },
+
+    {
+      "name": "Niagara falls",
+      "description": "Niagara Falls is a major natural attraction on the U.S.-Canada border, featuring three powerful waterfalls: Horseshoe Falls, American Falls, and Bridal Veil Falls.",
+      "stats": {
+        "color": "turquoise",
+        "comfort": "8",
+        "tree": "yes",
+        "timeOfDay": "day",
+        "season": "summer"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (4).png"
+    },
+    {
+      "name": "Eiffel tower",
+      "description": "The Eiffel Tower, completed in 1889, is a wrought-iron landmark in Paris, known for its distinctive design and stunning city views.",
+      "stats": {
+        "color": "pink",
+        "comfort": "6",
+        "tree": "yes",
+        "timeOfDay": "day",
+        "season": "summer"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (5).png"
+    },
+
+    {
+      "name": "Taj Mahal",
+      "description": "The Taj Mahal is a stunning white marble mausoleum in Agra, India, built by Emperor Shah Jahan in the 17th century in memory of his wife Mumtaz Mahal.",
+      "stats": {
+        "color": "white",
+        "comfort": "8",
+        "tree": "yes",
+        "timeOfDay": "day",
+        "season": "summer"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (7).png"
+    },
+    {
+      "name": "Giraffe",
+      "description": "A giraffe is a tall African mammal known for its long neck, legs, and distinctive spotted coat. It is the tallest land animal and primarily feeds on leaves from trees.",
+      "stats": {
+        "color": "orange",
+        "comfort": "7",
+        "tree": "yes",
+        "timeOfDay": "day",
+        "season": "summer"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (8).png"
+    },
+    {
+      "name": "White bear",
+      "description": "A polar bear is a large white bear native to the Arctic, known for its thick fur and ability to swim long distances. It primarily hunts seals and is well adapted to cold environments.",
+      "stats": {
+        "color": "white",
+        "comfort": "5",
+        "tree": "no",
+        "timeOfDay": "day",
+        "season": "winter"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (9).png"
+    },
+    {
+      "name": "Hawai",
+      "description": "Hawaii is a U.S. state located in the central Pacific Ocean, known for its beautiful beaches, volcanic landscapes, and diverse culture.",
+      "stats": {
+        "color": "green",
+        "comfort": "8",
+        "tree": "yes",
+        "timeOfDay": "day",
+        "season": "summer"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (10).png"
+    },
+
+    {
+      "name": "City",
+      "description": "A city is a large, densely populated urban area with complex infrastructure, including buildings, roads, and services. It serves as a hub for commerce, culture, and governance.",
+      "stats": {
+        "color": "black",
+        "comfort": "4",
+        "tree": "yes",
+        "timeOfDay": "day",
+        "season": "spring"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (12).png"
+    },
+    {
+      "name": "Desert",
+      "description": "A desert is a barren, arid region with minimal vegetation and low precipitation. It often features sand dunes, rocky landscapes, and extreme temperature variations.",
+      "stats": {
+        "color": "orangered",
+        "comfort": "2",
+        "tree": "no",
+        "timeOfDay": "day",
+        "season": "summer"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (13).png"
+    },
+    {
+      "name": "Farm",
+      "description": "A farm is a tract of land used for growing crops and raising animals. It includes buildings and equipment necessary for agricultural activities, such as fields, barns, and silos.",
+      "stats": {
+        "color": "green",
+        "comfort": "10",
+        "tree": "yes",
+        "timeOfDay": "day",
+        "season": "spring"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (14).png"
+    },
+    {
+      "name": "Forest",
+      "description": "A winter forest is a wooded area covered in snow and ice, with bare trees and a quiet, serene atmosphere.",
+      "stats": {
+        "color": "blue",
+        "comfort": "10",
+        "tree": "yes",
+        "timeOfDay": "day",
+        "season": "winter"
+      },
+      "image": "data/DrawKit Vector Illustration Landscape & Scenery (15).png"
+    }
+  ]
+}

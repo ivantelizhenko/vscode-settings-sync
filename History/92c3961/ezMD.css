@@ -1,0 +1,22 @@
+.button {
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttonGreen {
+  background-color: #3b8f44;
+}
+.buttonRed {
+  background-color: #ffbaba;
+}
+
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}

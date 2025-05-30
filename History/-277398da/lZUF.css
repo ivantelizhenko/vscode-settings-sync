@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  background-color: #f8fff4;
+  width: 100%;
+  height: var(--header-height);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  width: var(--left-side-width);
+  padding: 0 2.8rem;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2.8rem;
+}
+
+.searchContainer {
+}

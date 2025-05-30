@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "title": "1984",
+      "author": "Dzhordzh Orvell",
+      "category": "Fiction",
+      "isbn": "0452284236"
+    },
+    {
+      "title": "",
+      "author": "",
+      "category": "Fiction",
+      "isbn": ""
+    },
+    {
+      "title": "",
+      "author": "",
+      "category": "Fiction",
+      "isbn": ""
+    },
+    {
+      "title": "",
+      "author": "",
+      "category": "Fiction",
+      "isbn": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+import styled from 'styled-components';
+
+const StyledEmpty = styled.p`
+  width: 100%;
+  text-align: center;
+  font-size: 6.4rem;
+  color: #c4c4c4;
+`;
+
+function Empty() {
+  return <StyledEmpty>Empty</StyledEmpty>;
+}
+
+export default Empty;

@@ -1,0 +1,31 @@
+.button {
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s;
+}
+
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.buttonGreen {
+  background-color: #3b8f44;
+}
+.buttonGreen:hover,
+.buttonGreen:active {
+  background-color: #337c3a;
+}
+.buttonRed {
+  background-color: #ffbaba;
+}
+.buttonRed:hover,
+.buttonRed:active {
+  background-color: #ff7979;
+}

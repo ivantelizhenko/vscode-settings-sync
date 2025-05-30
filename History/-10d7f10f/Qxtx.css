@@ -1,0 +1,27 @@
+.categoriesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d7ded3;
+  width: 100%;
+  height: calc(var(--header-height) / 2);
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 11;
+}
+
+.category {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+.category:hover {
+  background-color: gray;
+}

@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "sessionId": "d0b1d073-de66-4fd6-9294-2a1cf46fa1c9",
+  "linearHistory": [
+    {
+      "requestId": "request_82e3a026-df62-4429-a475-fe9a5be0caa4",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_ea6fd1c3-e4f8-4ad5-86a4-21fccda0c230",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_9ea40992-17d7-40b8-b3b3-fb523a568473",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_283e4845-8154-4aa2-a025-b4013c465c63",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_312d9cde-62ff-48ba-b1ba-1e93759c3f37",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_27f5e658-5e0c-49a6-b154-2f44c4a6ed33",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_e29cb985-aa7a-47f4-b238-304a1fe76bc1",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_cf2f8365-3eda-4195-b50e-da47aedcd611",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_4ac811c0-d58f-42bd-b56b-4876852e5c48",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_4c6a7f24-96bf-4212-a782-3e8b4212c89f",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    }
+  ],
+  "linearHistoryIndex": 10,
+  "initialFileContents": [],
+  "recentSnapshot": {
+    "workingSet": [],
+    "entries": []
+  }
+}

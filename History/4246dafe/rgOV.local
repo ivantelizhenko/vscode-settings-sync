@@ -1,0 +1,9 @@
+VITE_SUPABASE_URL= https://drbzgcspdpbpmaqcflfg.supabase.co
+VITE_SUPABASE_ANON_KEY= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpsZ3Rva3lhdmRnZXdkcnVqd3loIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY3NzYxMTEsImV4cCI6MjA2MjM1MjExMX0.2a3nJYUVXqARH4EJZ1yIK2VuX6g7sv8Yl9dgGLqXuyg
+
+
+
+import { createClient } from '@supabase/supabase-js'
+const supabaseUrl = ''
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)

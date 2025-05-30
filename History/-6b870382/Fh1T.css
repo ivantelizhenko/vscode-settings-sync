@@ -1,0 +1,7 @@
+.empty {
+  color: #f8fff4;
+  font-size: 2.4rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}

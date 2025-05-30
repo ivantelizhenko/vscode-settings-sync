@@ -1,0 +1,4 @@
+const config = {
+  singleQuote: true,
+  printWidth: 80,
+};

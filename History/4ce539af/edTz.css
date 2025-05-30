@@ -1,0 +1,27 @@
+.container {
+}
+
+.data {
+  font-size: 1.3rem;
+}
+
+.input {
+  border: 1px solid #3b8f443d;
+  color: #3b8f44;
+  border-radius: 5px;
+  width: 100%;
+}
+.input::placeholder {
+  color: #3b8f443d;
+}
+
+.inputTitle {
+  font-weight: 600;
+  padding: 1.2rem;
+}
+
+.inputDescription {
+  padding: 1.2rem;
+  padding-bottom: auto;
+  font-size: 1.4rem;
+}

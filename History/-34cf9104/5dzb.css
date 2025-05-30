@@ -1,0 +1,33 @@
+@media (max-width: 52em) {
+  .nav {
+    display: grid;
+    height: 12rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .nav__items {
+    height: 50%;
+    grid-row: 2/-1;
+    grid-column: 1 / 3;
+    margin-right: auto;
+  }
+
+  .nav__item,
+  .nav__ing {
+    font-size: ;
+  }
+
+  .nav__img {
+    margin: 0 auto;
+    grid-column: 1/-1;
+    height: 100%;
+  }
+
+  .nav__button {
+    margin-left: auto;
+    grid-row: 2/-1;
+    grid-column: -1 / -4;
+    height: 50%;
+  }
+}

@@ -1,0 +1,70 @@
+/* --- 01 TYPOGRAPHY SYSTEM
+
+
+- Font weights:
+Default: 400
+MEDIUM: 500
+SEMI-BOLD: 600
+BOLD: 700
+- Line heights:
+Default: 1
+SMALL: 1.05
+MEDIUM: 1.2 
+PARAGRAPH DEFAULT: 1.6
+
+-letter height: 
+-0.5px
+0.75px
+
+---02 COLORS
+
+- Primary: #e67e22
+- 
+- Tints:
+#fdf2e9
+#fae5d3
+- Shades:#cf711f
+- Accents: 
+- Greys:
+#6f6f6f(lightest grey allowed on #fdf2e9) 
+#555
+#333 
+#888
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+DEFAULT: 9px
+MEDIUM: 11px
+
+--- 07 WHITESPACE
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAV BAR */
+
+header {
+  display: flex;
+}
+
+.navigation {
+  margin: 16px;
+}
+
+.logo-icon {
+  height: 35px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

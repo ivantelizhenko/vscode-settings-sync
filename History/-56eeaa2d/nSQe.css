@@ -1,0 +1,66 @@
+@layer media {
+  @media (max-width: 750px) {
+    html {
+      --section-horizontal-padding: 16px;
+    }
+
+    /*/////////////////////////////////*/
+    /*            HEADER               */
+    /*/////////////////////////////////*/
+    .header {
+      padding: var(--section-horizontal-padding);
+    }
+
+    .logo {
+      width: 80px;
+    }
+
+    .header__navigation,
+    .open-dialog-subscribe-desktop {
+      display: none;
+    }
+
+    #open-dialog-menu {
+      display: revert;
+    }
+
+    /*/////////////////////////////////*/
+    /*            DIALOG               */
+    /*/////////////////////////////////*/
+    .dialog-subscribe {
+      height: 100%;
+      width: 100%;
+
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .dialog-subscribe__text {
+      text-align: center;
+    }
+
+    .dialog-subscribe__form {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+    }
+
+    .dialog-subscribe__button--close {
+      border-radius: 50%;
+      background-color: var(--color-white);
+      padding: 16px;
+
+      & svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    /*/////////////////////////////////*/
+    /*            Toast                */
+    /*/////////////////////////////////*/
+    .toast {
+      padding: 8px 16px;
+      font-size: 0.875rem;
+    }
+  }
+}

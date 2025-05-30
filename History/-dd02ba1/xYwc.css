@@ -1,0 +1,152 @@
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: #1098ad 10px solid;
+  /* margin: 0px;
+  padding: 0px; */
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+.mainheader {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 25px;
+  margin-bottom: 60px;
+  height: 65px;
+  /* margin: 0px 50px; */
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  width: 500px;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+/*footer p {
+  font-size: 16px;
+}*/
+/*article header p {
+  font-style: italic;
+}*/
+#author {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#copyright {
+  font-size: 16px;
+}
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* ul { 
+  list-style: none;
+} */
+.related {
+  list-style: nonce;
+  color: #1098ad;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+/* .links {
+  color: #1098ad;
+} */
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0px;
+}
+/* article p:nth-child(5) {
+  color: skyblue;
+} */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ad;
+}
+a:hover {
+  text-decoration: underline;
+  color: orangered;
+  font-weight: bold;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+nav {
+  font-size: 18px;
+  padding: 0px 0px;
+}
+nav a:link {
+  margin: 15px;
+}
+
+article {
+  margin-bottom: 60px;
+}

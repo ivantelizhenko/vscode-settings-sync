@@ -1,0 +1,6 @@
+.verticalTest {
+  writing-mode: vertical-rl;
+
+  background-color: red;
+  width: 100%;
+}

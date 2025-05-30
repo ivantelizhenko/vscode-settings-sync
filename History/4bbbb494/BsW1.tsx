@@ -1,0 +1,40 @@
+import { useEffect } from 'react';
+import { Outlet, useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
+import { getIDsFromLocalStorage } from '../features/utils/helpers';
+import { useAppDispatch } from '../store/store';
+import { addIDs } from '../features/store/statusSlice';
+
+function AppEnviroment() {
+  const navigate = useNavigate();
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    const localStorageIDs = getIDsFromLocalStorage();
+
+    if (localStorageIDs?.gameId && localStorageIDs?.userId) {
+      dispatch(
+        addIDs({
+          gameId: localStorageIDs.gameId,
+          userId: localStorageIDs?.userId,
+        })
+      );
+      navigate(`/chess/${localStorageIDs.gameId}`);
+    } else navigate('/menu');
+  }, [dispatch, navigate]);
+
+  return (
+    <Wrapper>
+      <Outlet />
+    </Wrapper>
+  );
+}
+
+const Wrapper = styled.div`
+  display: grid;
+  height: 100%;
+  max-height: 100%;
+  background-color: var(--color-gray-700);
+`;
+
+export default AppEnviroment;

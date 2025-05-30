@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: false;
+}
+
+@theme {
+  --color-brand: hsla(14, 77%, 54%, 1);
+
+  --color-black: hsla(215, 28%, 17%, 1);
+  --color-gray: hsla(216, 12%, 84%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+
+  --gap-sm: 10px;
+  --gap-md: 16px;
+  --gap-bg: 20px;
+}
+
+*,
+*::before,
+*::after {
+  font-family:;
+}

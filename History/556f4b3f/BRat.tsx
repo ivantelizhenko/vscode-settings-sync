@@ -1,0 +1,21 @@
+import styled from "styled-components";
+
+function App() {
+  return <Wrapper></Wrapper>;
+}
+
+const Wrapper = styled.main`
+  --color-main: #18bdac;
+  --color-main-darker-lite: #16b1a4;
+  --color-main-darker: #0ca192;
+  --color-main-lighter: #50d3c4;
+  --color-x: #545453;
+  --color-o: #f2ecd2;
+  --color-modal-bg: #e0f3f1;
+
+  background-color: var(--color-main);
+
+  font-family: "Oswald", sans-serif;
+`;
+
+export default App;

@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "sessionId": "6868513f-4e16-4275-b9d2-367cf76b4a8c",
+  "linearHistory": [
+    {
+      "requestId": "request_00f7aa7a-db35-4d55-86c9-bec99f18e358",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_4897a8bf-52f1-4efc-9022-658d1a0be294",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_7889138a-82a8-4d95-b410-b2039d85c9f1",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_609a101a-f88f-4fd0-95c5-7bd4860801b4",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    },
+    {
+      "requestId": "request_49a8cfca-ad14-499b-8740-1e78e955a7e4",
+      "stops": [
+        {
+          "workingSet": [],
+          "entries": []
+        }
+      ]
+    }
+  ],
+  "linearHistoryIndex": 5,
+  "initialFileContents": [],
+  "recentSnapshot": {
+    "workingSet": [],
+    "entries": []
+  }
+}

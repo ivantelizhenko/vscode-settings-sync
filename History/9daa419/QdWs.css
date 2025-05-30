@@ -1,0 +1,40 @@
+.toaster__wrapper {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  place-content: center;
+  width: 100%;
+  padding: 64px;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  display: none;
+  transform: translateY(100%);
+}
+
+.toaster {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  color: var(--white);
+  background-color: hsla(250, 88%, 7%, 1);
+  border-radius: 1100px;
+  width: fit-content;
+  font-size: 24px;
+
+  & p {
+    line-height: 1.25;
+  }
+}
+.toaster__icon {
+  font-size: 36px;
+}
+.toaster__button--close {
+  background-color: transparent;
+  border: none;
+  color: hsla(0, 0%, 60%, 1);
+  font-size: 36px;
+  font-weight: 100;
+}

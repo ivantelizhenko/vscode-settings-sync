@@ -1,0 +1,9 @@
+'use strict';
+
+const btn = document.querySelectorAll('.login__btn');
+btn.forEach(btn =>
+  btn.addEventListener('click', function (e) {
+    console.log(e.target);
+    console.log(e.target.closest('.login__btn'));
+  })
+);
